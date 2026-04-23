@@ -39,7 +39,7 @@ Microsoft uses severity (also called **priority** in some product areas) to dete
 | **Severity B / High** | Significant feature loss, major performance degradation; partial workaround possible | **≤ 2 hours** (Unified Advanced/Performance) |
 | **Severity C / General** | Minor impact, question, or general guidance request | **≤ 4 business hours** |
 
-> ⚠️ Initial response time SLAs apply to **Unified Advanced** and **Unified Performance** contracts. **Unified Core** receives next-business-day response for Severity A/B. See [03 — Unified & Premier Contracts](./03-unified-premier-contracts/) for full tier comparison.
+> ⚠️ Initial response time SLAs apply to **Unified Advanced** and **Unified Performance** contracts. **Unified Core** receives next-business-day response for Severity A/B. See [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) for full tier comparison.
 
 ---
 
@@ -204,6 +204,10 @@ Different Microsoft product areas have slightly different case routing:
 
 ## Related
 
-- 📄 [03 — Unified & Premier Contracts](./03-unified-premier-contracts/) — understand which SLA tier applies to your organisation
-- 🔄 [05 — Services Hub vs Engage Center](./05-services-hub-comparison/) — case creation differences
-- ⚡ [06 — Cheatsheet](./06-cheatsheet/) — quick severity/SLA reference
+- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — understand which SLA tier applies to your organisation
+- 🔄 [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) — case creation differences
+- ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — quick severity/SLA reference
+
+---
+
+[← 01 — Navigation & Features](/engage-center-notes/01-navigation-features/) | [03 — Unified & Premier Contracts →](/engage-center-notes/03-unified-premier-contracts/)

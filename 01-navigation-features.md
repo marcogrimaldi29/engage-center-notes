@@ -89,7 +89,7 @@ The **Home** dashboard is your entry point after login. It is personalised based
 
 ## Support Section
 
-The Support section is where you manage reactive break-fix cases. See [02 — Support Requests](./02-support-requests/) for full detail.
+The Support section is where you manage reactive break-fix cases. See [02 — Support Requests](/engage-center-notes/02-support-requests/) for full detail.
 
 **Key views:**
 - **All Requests** — filterable list of all open and closed cases
@@ -110,7 +110,7 @@ The Services section exposes **proactive services** included with your Unified S
 | **On-Demand Assessments** | Automated or guided health checks (Azure Well-Architected, Security, Identity, etc.) |
 | **Advisory Services** | Scheduled technical advisory sessions with a DSE or CSA |
 | **Workshops & Briefings** | Microsoft-delivered education sessions |
-| **MIRP** | Microsoft Incident Response Planning — see [04 — Digital MIRP](./04-digital-mirp/) |
+| **MIRP** | Microsoft Incident Response Planning — see [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) |
 | **Rapid Response** | Accelerated resolution for critical proactive engagements |
 | **Custom Engagements** | Contract-specific services negotiated with your CSAM |
 
@@ -253,3 +253,7 @@ Navigate to **Settings** (gear icon) or your **profile avatar** → Settings:
 | **Legacy case history** | Cases from before migration may have limited data in Engage Center |
 
 > These limitations are expected to be resolved as the platform matures. Check the [Microsoft roadmap](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/engage-center) for updates.
+
+---
+
+[← 00 — Platform Overview](/engage-center-notes/00-overview/) | [02 — Support Requests →](/engage-center-notes/02-support-requests/)

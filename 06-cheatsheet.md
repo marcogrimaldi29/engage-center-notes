@@ -205,3 +205,7 @@ For use during MIRP or advisory sessions:
 ## ©️ Notes
 
 > *Not affiliated with or endorsed by Microsoft. Content based on publicly available documentation and field experience. Always verify against the latest [Microsoft documentation](https://learn.microsoft.com/en-us/). Last reviewed: April 2026.*
+
+---
+
+[← 05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) | [Back to Home →](/engage-center-notes/)

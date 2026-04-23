@@ -198,6 +198,10 @@ flowchart TD
 
 ## Related
 
-- 🌐 [00 — Platform Overview](./00-overview/) — Engage Center context
-- 🧭 [01 — Navigation & Features](./01-navigation-features/) — Engage Center UI walkthrough
-- ⚡ [06 — Cheatsheet](./06-cheatsheet/) — quick URL and feature reference
+- 🌐 [00 — Platform Overview](/engage-center-notes/00-overview/) — Engage Center context
+- 🧭 [01 — Navigation & Features](/engage-center-notes/01-navigation-features/) — Engage Center UI walkthrough
+- ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — quick URL and feature reference
+
+---
+
+[← 04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) | [06 — Quick Reference Cheatsheet →](/engage-center-notes/06-cheatsheet/)

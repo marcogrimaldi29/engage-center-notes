@@ -161,6 +161,10 @@ The platform is designed to support **all four phases** of the support lifecycle
 
 ## What's Next?
 
-- 🧭 [01 — Navigation & Features](./01-navigation-features/) — UI walkthrough, how to find everything
-- 📄 [03 — Unified & Premier Contracts](./03-unified-premier-contracts/) — understand your entitlements
-- 🔄 [05 — Services Hub vs Engage Center](./05-services-hub-comparison/) — what moved, what hasn't
+- 🧭 [01 — Navigation & Features](/engage-center-notes/01-navigation-features/) — UI walkthrough, how to find everything
+- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — understand your entitlements
+- 🔄 [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) — what moved, what hasn't
+
+---
+
+[← Back to Home](/engage-center-notes/) | [01 — Navigation & Features →](/engage-center-notes/01-navigation-features/)
