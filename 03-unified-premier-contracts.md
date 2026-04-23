@@ -222,6 +222,10 @@ flowchart LR
 
 ## Related
 
-- 🎫 [02 — Support Requests](./02-support-requests/) — SLA reference by severity
-- 🛡️ [04 — Digital MIRP](./04-digital-mirp/) — proactive IR service (Advanced/Performance)
-- ⚡ [06 — Cheatsheet](./06-cheatsheet/) — tier comparison at a glance
+- 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — SLA reference by severity
+- 🛡️ [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) — proactive IR service (Advanced/Performance)
+- ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — tier comparison at a glance
+
+---
+
+[← 02 — Support Requests](/engage-center-notes/02-support-requests/) | [04 — Digital MIRP →](/engage-center-notes/04-digital-mirp/)

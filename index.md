@@ -60,43 +60,43 @@ flowchart TD
 <div style="border:1px solid #0078d4; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🌐 00 — Platform Overview</h3>
 <p>What Engage Center is, the rollout context, key personas, and how it fits within Microsoft's support ecosystem.</p>
-<a href="./00-overview/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/00-overview/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #00b4d8; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🧭 01 — Navigation & Features</h3>
 <p>UI walkthrough, key sections, search, notifications, account settings, and productivity tips.</p>
-<a href="./01-navigation-features/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/01-navigation-features/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #48cae4; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🎫 02 — Support Requests</h3>
 <p>Creating, managing, and escalating support cases. SLA tiers, severity levels, and routing logic.</p>
-<a href="./02-support-requests/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/02-support-requests/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #0090b0; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">📄 03 — Unified & Premier Contracts</h3>
 <p>Unified Core / Advanced / Performance tiers vs legacy Premier. Benefits, SLAs, and entitlements explained.</p>
-<a href="./03-unified-premier-contracts/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/03-unified-premier-contracts/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #005a9e; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🛡️ 04 — Digital MIRP</h3>
 <p>Digital delivery of the Microsoft Incident Response Planning service — scope, deliverables, and how to engage.</p>
-<a href="./04-digital-mirp/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/04-digital-mirp/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #3a86b4; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🔄 05 — Services Hub vs Engage Center</h3>
 <p>Side-by-side feature comparison, migration path, what's changed, and what's still in Services Hub.</p>
-<a href="./05-services-hub-comparison/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/05-services-hub-comparison/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #90e0ef; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">⚡ 06 — Quick Reference Cheatsheet</h3>
 <p>Key URLs, SLA tables, contract tier comparison at a glance, escalation paths, and CSA field tips.</p>
-<a href="./06-cheatsheet/" class="btn btn-outline fs-5">Read →</a>
+<a href="/engage-center-notes/06-cheatsheet/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 </div>

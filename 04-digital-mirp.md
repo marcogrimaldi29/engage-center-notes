@@ -203,6 +203,10 @@ Two MIRP-adjacent Microsoft services that are often confused:
 
 ## Related
 
-- 📄 [03 — Unified & Premier Contracts](./03-unified-premier-contracts/) — confirm your tier includes MIRP
-- 🎫 [02 — Support Requests](./02-support-requests/) — security incident cases (reactive)
-- ⚡ [06 — Cheatsheet](./06-cheatsheet/) — MIRP quick reference
+- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — confirm your tier includes MIRP
+- 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — security incident cases (reactive)
+- ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — MIRP quick reference
+
+---
+
+[← 03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) | [05 — Services Hub vs Engage Center →](/engage-center-notes/05-services-hub-comparison/)
