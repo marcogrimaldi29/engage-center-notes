@@ -23,7 +23,7 @@ mermaid: true
 
 ## What Is Engage Center?
 
-**Microsoft Engage Center** (`engage.microsoft.com`) is the next-generation customer experience portal for organisations with a **Microsoft Unified Support** agreement (and, progressively, select Premier customers). It is designed as the single, modernised destination for:
+**Microsoft Engage Center** (`engagecenter.microsoft.com`) is the next-generation customer experience portal for organisations with a **Microsoft Unified Support** agreement (and, progressively, select Premier customers). It is designed as the single, modernised destination for:
 
 - Filing and tracking **support cases**
 - Accessing **proactive services** (On-Demand Assessments, health checks, MIRP)
@@ -139,7 +139,7 @@ The platform is designed to support **all four phases** of the support lifecycle
 | **MFA** | Required (Microsoft Entra Conditional Access policies apply) |
 | **Supported browsers** | Edge, Chrome, Firefox (latest versions); Safari supported |
 
-> 💡 If you cannot access `engage.microsoft.com`, contact your CSAM or raise a request through `support.microsoft.com` to get your account provisioned.
+> 💡 If you cannot access `engagecenter.microsoft.com`, contact your CSAM or raise a request through `support.microsoft.com` to get your account provisioned.
 
 ---
 

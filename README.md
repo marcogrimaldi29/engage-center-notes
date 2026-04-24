@@ -13,7 +13,7 @@
 
 ## 📌 What Is This?
 
-**Engage Center** (`engage.microsoft.com`) is Microsoft's next-generation customer portal for organisations with Unified Support contracts. It is replacing **Services Hub** and consolidates support cases, proactive services, learning, and account management in a single modernised interface.
+**Engage Center** (`engagecenter.microsoft.com`) is Microsoft's next-generation customer portal for organisations with Unified Support contracts. It is replacing **Services Hub** and consolidates support cases, proactive services, learning, and account management in a single modernised interface.
 
 These notes are a practical reference for **Cloud Solutions Architects** working with customers on the platform — covering everything from the portal UI and support case management to contract entitlements, Digital MIRP, and the Services Hub migration.
 
@@ -77,7 +77,7 @@ The site uses **[Just the Docs](https://github.com/just-the-docs/just-the-docs)*
 
 | Resource | Link |
 |----------|------|
-| 🌐 Engage Center Portal | [engage.microsoft.com](https://engage.microsoft.com) |
+| 🌐 Engage Center Portal | [engagecenter.microsoft.com](https://engagecenter.microsoft.com/) |
 | 🏛️ Services Hub (legacy) | [serviceshub.microsoft.com](https://serviceshub.microsoft.com) |
 | 📘 Microsoft Unified Support | [microsoft.com/unifiedsupport](https://www.microsoft.com/en-us/unifiedsupport) |
 | 🎓 Microsoft Learn | [learn.microsoft.com](https://learn.microsoft.com) |
