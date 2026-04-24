@@ -23,9 +23,9 @@ mermaid: true
 
 ## Overview
 
-**Services Hub** (`serviceshub.microsoft.com`) was the primary customer portal for Microsoft Unified (and Premier) support customers from ~2018 onward. **Engage Center** (`engagecenter.microsoft.com`) is its successor, currently rolling out across Microsoft's customer base.
+**Services Hub** (`serviceshub.microsoft.com`) was the primary customer portal for Microsoft Unified (and Premier) support customers from ~2018 onward. **Engage Center** (`engagecenter.microsoft.com`) is its successor — built on Azure — currently rolling out across Microsoft's customer base.
 
-The two portals **run in parallel** during the transition period. Understanding what lives where is essential for CSAs advising customers or using the portals day-to-day.
+The two portals **run in parallel** during the transition period. The outcome is defined: **Engage Center becomes the single experience for daily support work**, with Services Hub eventually redirecting to it. Understanding what lives where during the transition is essential for CSAs advising customers.
 
 ---
 
@@ -42,12 +42,30 @@ timeline
     2023 : Engage Center pilot / early access
     2024 : Engage Center general availability (rolling)
          : Parallel operation begins
-    2025 : Most customers migrated to Engage Center
-         : Services Hub maintained for legacy workflows
-    2026  : Services Hub retirement (target, subject to change)
+    2025 : Features transitioning gradually per customer
+         : Services Hub maintained during transition
+    TBD  : All customers fully on Engage Center
+         : Services Hub redirects to Engage Center
 ```
 
-> ⚠️ Dates are indicative. Microsoft has not published a firm Services Hub retirement date. Confirm the current status with your CSAM.
+> ⚠️ Microsoft has not published a firm Services Hub retirement date. The docs state there is "a defined point where all customers move fully to Engage Center, and Services Hub is no longer accessed" — but no year is given. Confirm the current status with your CSAM.
+
+---
+
+## Official Rollout Phases
+
+Microsoft transitions features to Engage Center in a defined order. A customer's experience may be gradual (features appear over time) or faster-paced (multiple features shift within days). The official phase order is:
+
+| Phase | Features Transitioning |
+|-------|----------------------|
+| **1 — Support foundations** | Case Create, Support Management |
+| **2 — Everyday support context** | External Resources, Digital MIRP, Learning, Support Insights |
+| **3 — Collaboration & artifacts** | Shared Files |
+| **4 — Administration & structure** | Access Management, Space Management |
+| **5 — Organisation & communications** | Customer Level Workspace, Newsletter, Customer Activity |
+| **6 — On-Demand Assessments** | Assessments (last to transition) |
+
+> 💡 Single Workspace customers generally receive features before Multiple Workspace customers. A feature is fully transitioned when it is end-to-end usable in Engage Center **and** no longer available in Services Hub (which redirects instead).
 
 ---
 
@@ -70,10 +88,12 @@ timeline
 |---------|:-----------:|:-------------:|-------|
 | **Services catalogue** | ✅ | ✅ Improved | Engage Center has expanded catalogue UI |
 | **Schedule a service** | ✅ | ✅ | |
-| **On-Demand Assessments** | ✅ | ✅ | Better UI in Engage Center |
+| **On-Demand Assessments** | ✅ | ✅ | Last feature to transition (Phase 6) |
 | **Service reports / findings** | ✅ | ✅ Improved | Engage Center has richer report viewer |
 | **Hours consumption tracking** | ✅ | ✅ | |
-| **Custom service requests** | ✅ | ✅ | |
+| **Digital MIRP** | ⚠️ Limited | ✅ Full | Fully digital in Engage Center (Phase 2) |
+| **External Resources** | ❌ | ✅ | New in Engage Center (Phase 2) |
+| **Shared Files** | ⚠️ | ✅ | Account team document sharing (Phase 3) |
 
 ### Account & Contacts
 
@@ -93,15 +113,16 @@ timeline
 | **Content library** | ✅ | ✅ | |
 | **Role-based recommendations** | ❌ | ✅ | New in Engage Center |
 
-### Analytics & Reporting
+### Support Insights & Reporting
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Case volume reports** | ✅ | ✅ Improved | More visualisation options in Engage Center |
-| **Resolution time analytics** | ⚠️ Basic | ✅ | |
-| **Service consumption reports** | ✅ | ✅ | |
+| **Case volume trend** | ✅ | ✅ Improved | More visualisation options; 6 months of data |
+| **Initial Response (IR) Met %** | ⚠️ Basic | ✅ | Tracks SLA compliance over time |
+| **CritSit tracking** | ⚠️ Basic | ✅ | Sev A count + elapsed critical minutes |
+| **Cross-cloud case distribution** | ❌ | ✅ | Azure + M365 + other products in one view |
+| **Open cases by severity & age** | ✅ | ✅ Improved | |
 | **Export to CSV/PDF** | ✅ | ✅ | |
-| **Health score** | ❌ | ✅ | New capability in Engage Center |
 
 ### Technical & Integration
 
@@ -119,26 +140,33 @@ timeline
 
 | Improvement | Detail |
 |-------------|--------|
-| **Modern UI/UX** | Fluent Design System, consistent with M365 Admin Center and Azure Portal |
+| **Modern UI/UX** | Built on Azure; Fluent Design System, consistent with M365 Admin Center and Azure Portal |
 | **Learning integration** | Deep Microsoft Learn integration with role-based recommendations |
-| **Analytics depth** | Richer case and service analytics with better visualisation |
-| **Health score** | New composite environment health indicator |
-| **User management** | Better role-based access control for org users |
+| **Support Insights** | 6 months of cross-cloud data; IR Met %, CritSit tracking, case distribution by product |
+| **Digital MIRP** | Fully digital, self-service; replaces static PowerPoint decks |
+| **External Resources** | Centralised management of external tenant links and resources |
+| **User management** | Microsoft Entra group-based role management with granular permissions |
 | **Services catalogue** | Cleaner browsing and scheduling experience |
 | **Report viewer** | Better in-portal viewing of proactive service findings |
-| **Search** | Global search across cases, services, and learning content |
+| **Shared Files** | Account team can upload documents directly into the portal |
 
 ---
 
-## What's Still Only in Services Hub (as of 2025)
+## What's Still Transitioning (as of 2025)
 
-| Feature | Detail |
-|---------|--------|
-| **Some legacy proactive service types** | Certain older PFE-style engagements not yet migrated |
-| **Historical case data (pre-migration)** | Cases from before your migration date may only be fully visible in Services Hub |
-| **Some Premier-specific workflows** | Legacy Premier customers may still need Services Hub for certain contract operations |
+Based on the official rollout order, features later in the phase sequence may still be in Services Hub for some customers:
 
-> 💡 If a customer says "I can't find X in Engage Center", always check Services Hub as a fallback during the transition period.
+| Feature | Rollout Phase | Status |
+|---------|:------------:|--------|
+| **On-Demand Assessments** | Phase 6 (last) | May still be in Services Hub |
+| **Space Management** | Phase 4 | May still be in Services Hub |
+| **Newsletter & Customer Activity** | Phase 5 | May still be in Services Hub |
+| **Customer Level Workspace** | Phase 5 | May still be in Services Hub |
+| **Historical case data (pre-migration)** | N/A | Older cases may only be fully visible in Services Hub |
+
+> ⚠️ Feature availability varies by customer — some transition faster than others. When a feature has fully transitioned, Services Hub will **redirect** you to Engage Center rather than showing the feature there.
+
+> 💡 If a customer says "I can't find X in Engage Center", check what phase that feature is in and whether Services Hub still shows it.
 
 ---
 
@@ -188,11 +216,24 @@ flowchart TD
 | Task | Done? |
 |------|-------|
 | Confirm customer has Engage Center access provisioned | ☐ |
+| Verify Engage Center URL is allowlisted on customer firewall / proxy | ☐ |
+| Confirm Conditional Access policies permit access to Engage Center | ☐ |
 | Walk through key sections in Engage Center with customer | ☐ |
 | Verify open cases appear correctly in Engage Center | ☐ |
-| Check if any active services are still only in Services Hub | ☐ |
+| Check which rollout phase the customer is on; identify features still in Services Hub | ☐ |
+| Work with CSAM to remove unused Services Hub Workspaces | ☐ |
 | Update bookmarks / shared links to point to Engage Center | ☐ |
-| Confirm CSAM contact details are current in People section | ☐ |
+
+---
+
+## Official Resources
+
+| Resource | Link |
+|----------|------|
+| Get ready for Engage Center | [Migration guide](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/migration) |
+| What to expect during rollout | [Rollout phases](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/what-to-expect) |
+| Engage Center features overview | [Features](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/features) |
+| Connectivity / allowlist guide | [Engage Center connectivity](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/support/engage-center-connectivity) |
 
 ---
 

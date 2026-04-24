@@ -64,12 +64,11 @@ flowchart TD
 | **Designated Support Engineer (DSE)** | ❌ | Optional add-on | ✅ included |
 | **On-Demand Assessments** | Limited | ✅ | ✅ (priority) |
 | **Proactive service hours** | Limited | Included pool | Expanded pool |
-| **Azure Advisor integration** | ✅ | ✅ | ✅ |
 | **Executive escalation** | ❌ | ❌ | ✅ |
 | **Engage Center access** | ✅ | ✅ | ✅ |
 | **Typical customer profile** | SMB / Dev/Test | Mid-market | Large enterprise / regulated |
 
-> ⚠️ Microsoft does not publish exact pricing publicly. Contract value is negotiated. The table above reflects *generally available feature differences* — your specific contract may vary.
+> ⚠️ Microsoft does not publicly document the tier breakdown or SLA targets in their official documentation — contract value and exact entitlements are negotiated. The table above reflects *generally understood field differences*. Always validate the specifics against your customer's signed contract or with your CSAM.
 
 ---
 
@@ -164,26 +163,26 @@ flowchart LR
     CONTRACT["📄 Contract\n(Annual Hours Pool)"]
     ODA["On-Demand\nAssessments"]
     ADV["Advisory\nSessions"]
-    MIRP["Digital MIRP\n& IR Readiness"]
     WORK["Workshops &\nBriefings"]
     CUSTOM["Custom\nEngagements"]
 
     CONTRACT --> ODA
     CONTRACT --> ADV
-    CONTRACT --> MIRP
     CONTRACT --> WORK
     CONTRACT --> CUSTOM
 ```
+
+> 💡 **Digital MIRP** is a self-service portal tool built into Engage Center — it is not consumed from the proactive hours pool. See [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) for details.
 
 | Service | Core | Advanced | Performance |
 |---------|:----:|:--------:|:-----------:|
 | On-Demand Assessments | Limited | ✅ Full catalogue | ✅ Priority |
 | Advisory sessions | ❌ | ✅ | ✅ Extended |
-| Digital MIRP | ❌ | ✅ | ✅ |
 | Workshops | Limited | ✅ | ✅ |
 | Custom engagements | ❌ | Limited | ✅ |
+| Digital MIRP (portal tool) | Role/contract dependent | ✅ | ✅ |
 
-> 💡 Hours consumed by proactive services are tracked in the Engage Center Analytics section. Monitor consumption against your entitlement pool — unused hours do not roll over.
+> 💡 Hours consumed by proactive services are tracked in the **Support Insights** section of Engage Center. Monitor consumption against your entitlement pool — unused hours do not roll over.
 
 ---
 
@@ -191,12 +190,16 @@ flowchart LR
 
 | Task | Where in Engage Center |
 |------|----------------------|
-| View contract details | **Account → Contract** |
-| View entitlement hours remaining | **Account → Entitlements** |
-| See contract expiry date | **Account → Contract → Overview** |
-| Add/remove contact permissions | **People & Contacts → Manage Users** |
+| View contract & agreement details | **Customer Activity** |
+| View purchased services & deliveries | **Customer Activity** |
+| View entitlement hours remaining | **Customer Activity** |
+| View Support Insights & case analytics | **Support Insights** |
+| Add/remove user permissions | **User Management** (Entra group-based) |
+| Manage Microsoft Entra groups | **Access Management** |
 | Request contract amendment | Contact your CSAM directly |
 | View invoice history | Not in Engage Center — contact your Microsoft Account Executive |
+
+> ⚠️ Navigation paths in Engage Center continue to evolve during the rollout. If a path has moved, refer to the [Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/) or ask your CSAM.
 
 ---
 
@@ -220,10 +223,21 @@ flowchart LR
 
 ---
 
+## Official Resources
+
+| Resource | Link |
+|----------|------|
+| Microsoft Unified overview | [microsoft.com/microsoft-unified](https://www.microsoft.com/en-us/microsoft-unified) |
+| Services Hub — Unified Support docs | [learn.microsoft.com/services-hub/unified](https://learn.microsoft.com/en-us/services-hub/unified/) |
+| Customer Activity (contract details) | [Services Hub Customer Activity](https://learn.microsoft.com/en-us/services-hub/unified/contracts/cap) |
+| Engage Center overview | [Engage Center overview](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/) |
+
+---
+
 ## Related Content
 
 - 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — SLA reference by severity
-- 🛡️ [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) — proactive IR service (Advanced/Performance)
+- 🛡️ [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) — portal tool for IR readiness
 - ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — tier comparison at a glance
 
 ---
