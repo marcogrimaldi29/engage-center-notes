@@ -10,7 +10,7 @@ mermaid: true
 # 🌐 Microsoft Engage Center — CSA Reference Notes
 {: .no_toc }
 
-**Cloud Solutions Architect Field Reference**
+**Cloud Solutions Architect Deep Dive**
 {: .fs-5 .fw-300 }
 
 [Get Started →](/engage-center-notes/00-overview){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -139,7 +139,11 @@ Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)*
 
 📍 **Find more content at [🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**
 
-> These notes reflect hands-on experience working with Engage Center in a CSA capacity. Content is updated as the platform evolves. Always cross-check with the latest Microsoft documentation.
+> This deep dive reflects hands-on experience working with Engage Center in a CSA capacity. Content is updated as the platform evolves. Always cross-check with the latest Microsoft documentation.
+
+Additional study notes and deep dives on Microsoft products, services, and platform experiences are available at the following Landing Page:
+
+👉 **[🛬 Landing Page: Study Notes](https://marcogrimaldi29.com/study-notes/)**
 
 ---
 
