@@ -19,7 +19,7 @@ mermaid: true
 ---
 
 > 🏠 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solutions Architect.
-> Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/engage-center)** and first-hand experience with the platform.
+> Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/)**.
 > Find more notes and content at **[🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**.
 > *Not affiliated with or endorsed by Microsoft. Always verify against the latest documentation.*
 
@@ -29,7 +29,7 @@ mermaid: true
 
 **Engage Center** is Microsoft's next-generation customer experience portal — the unified hub for customers with **Unified Support** (formerly Premier) contracts. It consolidates support case management, proactive services, account information, and learning resources into a single, modernised interface.
 
-> **Key URL:** [engage.microsoft.com](https://engage.microsoft.com)
+> **Key URL:** [engagecenter.microsoft.com](https://engagecenter.microsoft.com/)
 
 Engage Center is rolling out progressively across Microsoft's customer base and is replacing/supplementing **Services Hub** (`serviceshub.microsoft.com`). New capabilities are being added continuously.
 
@@ -40,7 +40,7 @@ Engage Center is rolling out progressively across Microsoft's customer base and 
 ```mermaid
 %%{init: {"theme":"dark","themeVariables":{"primaryTextColor":"#ffffff","secondaryTextColor":"#e8eaed","nodeBorder":"#0078d4","mainBkg":"#0d2136"}}}%%
 flowchart TD
-    EC["🌐 Engage Center\nengage.microsoft.com"]
+    EC["🌐 Engage Center\nengagecenter.microsoft.com"]
     EC --> SR["🎫 Support Requests\n(Cases & SRs)"]
     EC --> PA["👤 Account & Contacts\n(CSAMs, TAMs)"]
     EC --> PS["📋 Proactive Services\n(Assessments, MIRP)"]
@@ -125,10 +125,10 @@ flowchart LR
 
 | Resource | Link |
 |----------|------|
-| 🌐 Engage Center Portal | [engage.microsoft.com](https://engage.microsoft.com) |
+| 🌐 Engage Center Portal | [engagecenter.microsoft.com](https://engagecenter.microsoft.com/) |
 | 🏛️ Services Hub (legacy) | [serviceshub.microsoft.com](https://serviceshub.microsoft.com) |
 | 📘 Microsoft Unified Support | [Microsoft Unified Support](https://www.microsoft.com/en-us/unifiedsupport) |
-| 🎓 Microsoft Learn — Support | [Microsoft Support Documentation](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/engage-center) |
+| 🎓 Microsoft Learn — Support | [Microsoft Support Documentation](https://learn.microsoft.com/en-us/services-hub/) |
 | 📞 Microsoft Support | [support.microsoft.com](https://support.microsoft.com) |
 
 ---

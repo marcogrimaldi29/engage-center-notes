@@ -27,7 +27,7 @@ mermaid: false
 
 | Portal / Resource | URL |
 |------------------|-----|
-| **Engage Center** | [engage.microsoft.com](https://engage.microsoft.com) |
+| **Engage Center** | [engagecenter.microsoft.com](https://engagecenter.microsoft.com/) |
 | **Services Hub** (legacy) | [serviceshub.microsoft.com](https://serviceshub.microsoft.com) |
 | **Azure Portal** | [portal.azure.com](https://portal.azure.com) |
 | **M365 Admin Center** | [admin.microsoft.com](https://admin.microsoft.com) |
@@ -140,7 +140,7 @@ Issue unresolved / response inadequate
 
 | Portal | Status | Use For |
 |--------|--------|---------|
-| **Engage Center** (`engage.microsoft.com`) | ✅ Primary (current) | All new workflows |
+| **Engage Center** (`engagecenter.microsoft.com`) | ✅ Primary (current) | All new workflows |
 | **Services Hub** (`serviceshub.microsoft.com`) | ⚠️ Legacy (parallel) | Legacy cases / service types only |
 
 ---

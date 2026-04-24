@@ -252,7 +252,7 @@ Navigate to **Settings** (gear icon) or your **profile avatar** → Settings:
 | **Mobile app** | No dedicated mobile app; responsive web only |
 | **Legacy case history** | Cases from before migration may have limited data in Engage Center |
 
-> These limitations are expected to be resolved as the platform matures. Check the [Microsoft roadmap](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/engage-center) for updates.
+> These limitations are expected to be resolved as the platform matures. Check the [Microsoft roadmap](https://learn.microsoft.com/en-us/services-hub/) for updates.
 
 ---
 

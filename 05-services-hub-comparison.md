@@ -23,7 +23,7 @@ mermaid: true
 
 ## Overview
 
-**Services Hub** (`serviceshub.microsoft.com`) was the primary customer portal for Microsoft Unified (and Premier) support customers from ~2018 onward. **Engage Center** (`engage.microsoft.com`) is its successor, currently rolling out across Microsoft's customer base.
+**Services Hub** (`serviceshub.microsoft.com`) was the primary customer portal for Microsoft Unified (and Premier) support customers from ~2018 onward. **Engage Center** (`engagecenter.microsoft.com`) is its successor, currently rolling out across Microsoft's customer base.
 
 The two portals **run in parallel** during the transition period. Understanding what lives where is essential for CSAs advising customers or using the portals day-to-day.
 
@@ -164,7 +164,7 @@ flowchart TD
 
 | Portal | URL | Primary Use (2025) |
 |--------|-----|-------------------|
-| **Engage Center** | `engage.microsoft.com` | Primary portal for most workflows |
+| **Engage Center** | `engagecenter.microsoft.com` | Primary portal for most workflows |
 | **Services Hub** | `serviceshub.microsoft.com` | Legacy / fallback |
 | **Azure Portal** | `portal.azure.com` | Azure resource management; can raise Azure support cases here too |
 | **M365 Admin Center** | `admin.microsoft.com` | M365/O365 admin; can raise M365 support cases |
