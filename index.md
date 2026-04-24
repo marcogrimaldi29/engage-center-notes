@@ -7,7 +7,7 @@ permalink: /
 mermaid: true
 ---
 
-# 🌐 Microsoft Engage Center — CSA Reference Notes
+# 🤝 Microsoft Engage Center — CSA Reference Notes
 {: .no_toc }
 
 **Cloud Solutions Architect Deep Dive**

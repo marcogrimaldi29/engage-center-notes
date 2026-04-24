@@ -1,4 +1,4 @@
-# 🌐 Microsoft Engage Center — CSA Reference Notes
+# 🤝 Microsoft Engage Center — CSA Reference Notes
 
 [![Deploy to GitHub Pages](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml/badge.svg)](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://marcogrimaldi29.com/engage-center-notes/)
