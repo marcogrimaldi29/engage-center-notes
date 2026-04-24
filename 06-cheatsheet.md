@@ -122,17 +122,18 @@ Issue unresolved / response inadequate
 
 ## 🛡️ Digital MIRP Quick Reference
 
-| Phase | Duration | Output |
-|-------|----------|--------|
-| Kickoff | 1 hour | Scope agreement |
-| Self-assessment | 1–2 weeks | Completed questionnaire |
-| Microsoft review | 1 week | Findings preparation |
-| Findings session | 2 hours | Live review + Q&A |
-| Report delivery | ≤5 business days | Written report in Engage Center |
+**Major Incident Response Plan** — self-service portal tool in Engage Center, not a consulting engagement.
 
-**MIRP domains assessed:** IR governance · Detection & monitoring · Containment & recovery · Microsoft-specific controls (Entra, M365, Azure security posture)
+| Section | Purpose |
+|---------|---------|
+| **Cloud Solutions** | Inventory of business-critical workloads + key contacts; attest when current |
+| **Your Account Team** | Microsoft contact info and support portal links |
+| **Response Guidelines** | Before / During / After a service incident guidance |
+| **Azure Health** | Services Dashboard + Resiliency Recommendations + Azure Advisor link |
 
-**Required tier:** Unified Advanced or Performance (not Core)
+**Azure workloads:** auto-populated via the Proactive Resiliency Program · **M365 / D365 / Power Platform:** added manually · **Contacts:** managed by customer admins only · **Attest** after any significant change
+
+**Access:** requires appropriate Engage Center role — confirm with CSAM
 
 ---
 

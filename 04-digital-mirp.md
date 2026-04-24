@@ -2,7 +2,7 @@
 layout: default
 title: "04 — Digital MIRP"
 nav_order: 6
-description: "Microsoft Incident Response Planning (MIRP) — digital delivery track: scope, deliverables, how to engage, and what to expect as a Cloud Solutions Architect."
+description: "Major Incident Response Plan (MIRP) in Microsoft Engage Center — what it is, how it's structured, and how to use it as a Cloud Solutions Architect."
 permalink: /04-digital-mirp/
 mermaid: true
 ---
@@ -23,170 +23,173 @@ mermaid: true
 
 ## What Is MIRP?
 
-**Microsoft Incident Response Planning (MIRP)** is a **proactive service** that helps organisations assess, design, and improve their incident response (IR) capabilities for their Microsoft-hosted or Microsoft-integrated environments. It is consumed from your Unified Support proactive hours pool.
+The **Major Incident Response Plan (MIRP)** is a **digital tool built into Microsoft Engage Center** that helps organisations and Microsoft maintain shared visibility over business-critical cloud solutions, key stakeholder contacts, and incident response procedures — so that when a major service incident occurs, the right people are reached and the right steps are followed quickly.
 
-> MIRP is *not* a reactive incident response service — it is a *planning and readiness* engagement. If you have an active security incident, that is handled through a **security support case** (Severity A) or the **Microsoft Detection and Response Team (DART)**.
+> MIRP is *not* a reactive incident response service. If you have an active security incident, open a **Severity A support case** or engage the **Microsoft Detection and Response Team (DART)**.
+
+### Why MIRP Matters
+
+Major service incidents demand quick, coordinated action. When teams know what to do, who to call, and where to look, recovery is faster and business impact is reduced. MIRP builds that readiness by:
+
+- **Centralising** business-critical cloud solutions and stakeholder details
+- **Defining** clear incident response steps, roles, and cadence
+- **Outlining** actions to prepare for, and reduce impact during, service incidents
+
+MIRP is a shared responsibility between the customer and Microsoft — together, it builds trust and enables better outcomes.
+
+### What's New: Why Digital?
+
+MIRP is now fully digital within Engage Center — replacing static PowerPoint decks. The benefits:
+
+| Old approach | Digital MIRP |
+|-------------|-------------|
+| Static PowerPoint deck | One centralised location in Engage Center |
+| Manually shared with contacts | Administrators manage contacts directly |
+| No confirmation of accuracy | Attestation confirms information is current |
+| Point-in-time snapshot | Updated as the platform and workloads evolve |
 
 ---
 
-## MIRP Delivery Tracks
+## MIRP Structure in Engage Center
 
-Microsoft offers MIRP in two delivery formats:
-
-| Track | Format | Depth | Typical Duration |
-|-------|--------|-------|-----------------|
-| **Traditional MIRP** | On-site or virtual workshops with a Premier Field Engineer / DSE | Deep, customised | 3–5 days |
-| **Digital MIRP** | Self-guided + advisor-assisted, portal-delivered | Structured, scalable | 2–4 weeks (async) |
-
-> Most new engagements are delivered as **Digital MIRP**, which is the focus of this page.
-
----
-
-## Digital MIRP: Overview
-
-**Digital MIRP** is a structured, portal-facilitated delivery of the MIRP framework. It leverages Engage Center (and predecessor Services Hub) to deliver content, assessments, and recommendations asynchronously, with optional advisor check-in sessions.
+MIRP is organised into four sections, accessible from the **Major Incident Response Plan** menu in Engage Center:
 
 ```mermaid
 %%{init: {"theme":"dark"}}%%
 flowchart TD
-    ENGAGE["Customer engages CSAM\nto schedule Digital MIRP"]
-    KICK["Kickoff session\n(CSA/DSE + customer)"]
-    ASSESS["Self-assessment phase\n(customer completes questionnaire)"]
-    REVIEW["Microsoft review\n(CSA/DSE analyses responses)"]
-    FINDINGS["Findings session\n(findings + recommendations presented)"]
-    REPORT["Written report delivered\nvia Engage Center"]
-    ROADMAP["Optional: remediation roadmap\nor follow-on advisory"]
+    MIRP["🛡️ Major Incident Response Plan\n(Engage Center)"]
+    CS["☁️ Cloud Solutions\nWorkload inventory + key contacts\n+ attestation"]
+    AT["👥 Your Account Team\nMicrosoft contact info\n+ support resources"]
+    RG["📋 Response Guidelines\nBefore / During / After\nan incident"]
+    AH["📊 Azure Health\nServices Dashboard\n+ Resiliency Recommendations"]
 
-    ENGAGE --> KICK --> ASSESS --> REVIEW --> FINDINGS --> REPORT --> ROADMAP
+    MIRP --> CS
+    MIRP --> AT
+    MIRP --> RG
+    MIRP --> AH
 ```
 
 ---
 
-## Scope of Digital MIRP
+## Cloud Solutions
 
-A Digital MIRP engagement typically covers the following domains:
+The **Cloud Solutions** section is the core of MIRP. It is where you maintain the inventory of business-critical workloads and the contacts responsible for them.
 
-### IR Process & Governance
+### Azure Workloads
 
-| Area | Assessment Focus |
-|------|----------------|
-| **IR policy & plan** | Does a documented IR plan exist? Is it current? |
-| **Roles & responsibilities** | Are IR roles defined, staffed, and trained? |
-| **Escalation procedures** | Internal escalation path + Microsoft escalation path defined? |
-| **Communication plan** | Internal and external (executive, legal, PR) comms playbook |
-| **Post-incident review process** | Is there a PIR / root cause analysis process? |
+Azure workloads are **automatically populated** based on workloads onboarded through the **Proactive Resiliency Program** that are associated with your organisation's active customer agreement.
 
-### Detection & Monitoring
+> 💡 If expected Azure workloads are not visible, they may not meet the onboarding or agreement requirements. Contact your CSAM for assistance.
 
-| Area | Assessment Focus |
-|------|----------------|
-| **Microsoft Sentinel / SIEM** | Is a SIEM deployed? Coverage of key data sources? |
-| **Microsoft Defender XDR** | Defender for Endpoint, Identity, Cloud Apps, Office 365 deployed? |
-| **Alert tuning** | Are high-fidelity alerts configured? False-positive management? |
-| **Threat intelligence** | MDTI (Microsoft Defender Threat Intelligence) integration? |
-| **Log retention** | Are logs retained per compliance/IR requirements? |
+### M365, D365, and Power Platform Solutions
 
-### Containment & Recovery
+These are **added manually**. Use the **+ Add** button on the Cloud Solutions page and fill in all required fields.
 
-| Area | Assessment Focus |
-|------|----------------|
-| **Identity resilience** | Break-glass accounts, PIM, Conditional Access hardening |
-| **Endpoint isolation capability** | Can you isolate a device within minutes? |
-| **Backup & restore** | Immutable backup copies, tested restore procedures |
-| **Network segmentation** | Can you contain blast radius via network controls? |
-| **Recovery runbooks** | Are runbooks documented and tested for common incident types? |
+> Each tenant in the dropdown can be toggled on or off for your workspace. If a tenant needs to be added or removed, follow the instructions in [External Resources](https://aka.ms/ec-externalresources).
 
-### Microsoft-specific Controls
+### Managing Key Contacts
 
-| Area | Assessment Focus |
-|------|----------------|
-| **Entra ID (AAD) security** | MFA coverage, CA policies, sign-in risk policies |
-| **Microsoft 365 security** | Exchange protection, Teams governance, SharePoint DLP |
-| **Azure security posture** | Microsoft Defender for Cloud score, policy compliance |
-| **Privileged access** | PAW/SAW usage, JIT access for VMs, Privileged Identity Management |
-| **Secure Score** | Current score and priority improvement areas |
+For each workload or solution, you can add the business and technical contacts who should be reachable during an incident:
 
----
+1. Select the three vertical dots (⋮) to the right of the workload or solution
+2. Select **Add New Contact**
+3. Fill out all required fields and select **Add**
 
-## Deliverables
+> ⚠️ **Microsoft users cannot add contacts** — this must be done by the customer's administrators.
 
-A completed Digital MIRP engagement produces:
+### Removing Non-Critical Workloads
 
-| Deliverable | Description |
-|------------|-------------|
-| **Assessment summary** | Scored maturity across each IR domain |
-| **Findings report** | Documented gaps with risk rating (Critical / High / Medium / Low) |
-| **Recommendations** | Prioritised action items, each mapped to a Microsoft service or control |
-| **Remediation roadmap** | Suggested sequencing of remediation actions |
-| **Reference architecture** | (Optional) Target-state IR architecture diagram |
+To keep the plan focused, remove workloads that are not business-critical:
+
+1. Select ⋮ next to the workload → **Remove From Plan** → confirm with **Remove**
+
+To add a workload back: **+ Add** → **Link Existing**.
+
+### Attestation
+
+Once the Cloud Solutions section is accurate and complete, select **Confirm** to **attest the MIRP**. Attestation signals to Microsoft that the information is current and the plan is ready for use in an incident.
+
+> 💡 Re-attest whenever your critical workloads or key contacts change — don't wait for an incident to find stale data.
+
+### Printing / Exporting
+
+The Solutions list can be printed or exported as a PDF directly from the portal using the **Print** button.
 
 ---
 
-## Maturity Model
+## Your Account Team
 
-Digital MIRP assesses IR maturity across a 4-level scale:
-
-| Level | Name | Description |
-|-------|------|-------------|
-| **1** | Initial | Ad hoc, undocumented; relies on individual knowledge |
-| **2** | Developing | Basic processes documented; inconsistently applied |
-| **3** | Defined | Standardised, documented, and consistently applied processes |
-| **4** | Optimised | Continuously improved; metrics-driven; proactive threat modelling |
-
-Most mid-market customers are at **Level 2** at first assessment. Regulated industries and mature security programmes typically target **Level 3–4**.
+The **Your Account Team** section provides always-available support contact information, links to support portals, and other resources needed to reach Microsoft quickly during an incident. This section is maintained by Microsoft and does not require customer input.
 
 ---
 
-## How to Engage
+## Response Guidelines
 
-### Prerequisites
+The **Response Guidelines** section contains comprehensive guidance covering what your team needs to do at each phase of a service incident:
+
+| Phase | Focus |
+|-------|-------|
+| **Before** a Service Incident | Minimise impact; know how to react when an incident occurs |
+| **During** a Service Incident | Know where to get official information; what to do in real time |
+| **After** a Service Incident | Understand what happened; prepare better for future incidents |
+
+Use the search bar or the left-side navigation menu within Response Guidelines to find specific topics.
+
+---
+
+## Azure Health
+
+The **Azure Health** section is available to Azure customers and provides two sub-sections:
+
+### Services Dashboard
+
+- View your Azure **subscriptions** and filter by workload
+- Check whether **service health alerts** are configured for each subscription
+- Follow links to the Azure portal, Azure documentation, or directly create service health alerts
+
+### Resiliency Recommendations
+
+- Review any resiliency details for workloads that have had a review
+- Filter by workload
+- Follow the link to **Azure Advisor** for full recommendation details
+
+---
+
+## Access & Prerequisites
 
 | Requirement | Detail |
 |-------------|--------|
-| **Contract tier** | Unified Advanced or Performance (Core does not include MIRP) |
-| **Available hours** | Confirm proactive hours remaining with CSAM |
-| **Stakeholders** | CISO / Security team lead sponsorship recommended |
-| **Tooling** | Basic Microsoft security stack (Defender, Entra ID) in place |
-
-### Engagement Flow
-
-1. **Contact your CSAM** — request a Digital MIRP engagement; confirm hours availability
-2. **CSAM schedules** — a CSA or DSE is assigned; kickoff scheduled within 2–3 weeks typically
-3. **Kickoff session** (1 hour) — scope agreement, questionnaire walkthrough, timeline set
-4. **Customer self-assessment** (1–2 weeks) — team completes structured questionnaire
-5. **Microsoft review** (1 week) — CSA/DSE analyses responses, prepares findings
-6. **Findings session** (2 hours) — live walkthrough of findings, Q&A
-7. **Report delivery** — written report published in Engage Center within 5 business days
+| **Portal access** | Must have a role in Engage Center that grants MIRP access — see [Engage Center Roles](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/) |
+| **Contract** | Requires an active Microsoft customer agreement with appropriate entitlements — confirm with your CSAM |
+| **Admin rights** | Contact management (adding/editing contacts) requires administrator role |
+| **Azure workload visibility** | Workloads must be onboarded via the Proactive Resiliency Program |
 
 ---
 
 ## MIRP vs DART
 
-Two MIRP-adjacent Microsoft services that are often confused:
-
 | Dimension | MIRP | DART |
 |-----------|------|------|
-| **Type** | Proactive planning | Reactive incident response |
-| **When** | Before an incident | During or immediately after an incident |
-| **Consumed from** | Proactive hours pool | Separate DART retainer or T&M engagement |
-| **Who delivers** | CSA / DSE | DART (Microsoft IR specialists) |
-| **Output** | Readiness assessment & recommendations | Incident investigation, containment, remediation |
-| **Contract requirement** | Unified Advanced / Performance | Separate DART engagement (or Unified Performance retainer) |
+| **Type** | Proactive planning & preparedness | Reactive incident response |
+| **When** | Before an incident — keep it current | During or immediately after an incident |
+| **Nature** | Self-service portal tool in Engage Center | Separate Microsoft IR specialist engagement |
+| **Who acts** | Customer administrators + Microsoft account team | DART (Microsoft Detection and Response Team) |
+| **Output** | Centralised workload/contact inventory + response guidelines | Incident investigation, containment, remediation |
 
-> 💡 MIRP ideally happens *before* DART is needed. Running a MIRP and then building a DART retainer is a strong IR posture combination for high-risk customers.
+> 💡 MIRP and DART are complementary. A well-maintained MIRP means that if DART is ever needed, Microsoft already has your critical workloads and the right contacts — response time is faster.
 
 ---
 
-## CSA Tips for MIRP Engagements
+## CSA Tips
 
 | Tip | Detail |
 |-----|--------|
-| **Get CISO buy-in early** | Without security leadership sponsorship, the assessment lacks authority to drive remediation |
-| **Pre-read the Secure Score** | Review Microsoft Secure Score and Defender for Cloud recommendations before kickoff — it tells you a lot about maturity level before the questionnaire |
-| **Frame MIRP as a starting point** | Customers sometimes fear the findings; position MIRP as a baseline, not a judgement |
-| **Tie findings to contract services** | Map each recommendation to a follow-on service that can be consumed from the proactive hours pool |
-| **Reference NIST CSF** | Customers familiar with NIST CSF (Identify / Protect / Detect / Respond / Recover) find the MIRP framework easier to understand when framed against it |
-| **Follow up with an On-Demand Assessment** | Pair the MIRP with a Microsoft Defender for Cloud or Identity security assessment for richer data |
+| **Review MIRP at every QBR** | Check that workloads are current and contacts haven't changed — stale data defeats the purpose |
+| **Attestation = readiness signal** | Encourage customers to re-attest after any significant change to their environment or org structure |
+| **Azure workload gaps → CSAM** | If the customer's critical Azure workloads aren't showing up, engage the CSAM to resolve the Proactive Resiliency Program onboarding |
+| **Walk through Response Guidelines with the customer** | Many customers haven't read them — a 30-minute walkthrough of the Before/During/After guidance is high value |
+| **Use MIRP contact inventory as a DRI conversation** | Who's listed as the technical contact for each workload? Is it the right person? This is a good governance touch-point |
+| **MIRP before DART, not instead of DART** | For high-risk customers (financial services, healthcare, critical infrastructure), recommend layering a DART retainer on top of a well-maintained MIRP |
 
 ---
 
@@ -194,17 +197,18 @@ Two MIRP-adjacent Microsoft services that are often confused:
 
 | Resource | Link |
 |----------|------|
-| Microsoft IR Readiness | [Microsoft Security Incident Response](https://www.microsoft.com/en-us/security/blog/topic/incident-response/) |
+| Official MIRP documentation | [MIRP in Microsoft Engage Center](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/customer-health/mirp) |
+| Engage Center Roles | [Roles & Access](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/) |
+| External Resources (tenant management) | [aka.ms/ec-externalresources](https://aka.ms/ec-externalresources) |
 | DART | [Microsoft Detection and Response Team](https://www.microsoft.com/en-us/security/blog/2020/06/10/dart-the-microsoft-cybersecurity-team-we-hope-you-never-meet/) |
-| Secure Score | [Microsoft Secure Score](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-secure-score) |
-| Defender for Cloud | [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/) |
+| Azure Advisor | [Azure Advisor](https://learn.microsoft.com/en-us/azure/advisor/) |
 
 ---
 
 ## Related Content
 
-- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — confirm your tier includes MIRP
-- 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — security incident cases (reactive)
+- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — confirm your contract includes MIRP access
+- 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — for active incidents, open a Severity A case
 - ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — MIRP quick reference
 
 ---
