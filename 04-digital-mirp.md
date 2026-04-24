@@ -201,7 +201,7 @@ Two MIRP-adjacent Microsoft services that are often confused:
 
 ---
 
-## Related
+## Related Content
 
 - 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — confirm your tier includes MIRP
 - 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — security incident cases (reactive)
