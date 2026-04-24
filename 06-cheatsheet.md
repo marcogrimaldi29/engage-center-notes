@@ -2,7 +2,7 @@
 layout: default
 title: "06 — Quick Reference Cheatsheet"
 nav_order: 8
-description: "Engage Center quick reference: key URLs, severity SLA table, contract tier comparison, escalation paths, MIRP checklist, and CSA field tips."
+description: "Engage Center quick reference: key URLs, severity SLA table, contract tier comparison, escalation paths, MIRP checklist, and CSA tips."
 permalink: /06-cheatsheet/
 mermaid: false
 ---
@@ -12,7 +12,7 @@ mermaid: false
 
 > 📁 [← Back to Home](/engage-center-notes/)
 
-*Field reference for Cloud Solutions Architects — everything on one page.*
+*Reference for Cloud Solutions Architects — everything on one page.*
 
 <details open markdown="block">
   <summary>Table of contents</summary>
@@ -158,7 +158,7 @@ Issue unresolved / response inadequate
 
 ---
 
-## 📝 CSA Field Tips
+## 📝 CSA Role Tips
 
 | Situation | Tip |
 |-----------|-----|
@@ -204,7 +204,7 @@ For use during MIRP or advisory sessions:
 
 ## ©️ Notes
 
-> *Not affiliated with or endorsed by Microsoft. Content based on publicly available documentation and field experience. Always verify against the latest [Microsoft documentation](https://learn.microsoft.com/en-us/). Last reviewed: April 2026.*
+> *Not affiliated with or endorsed by Microsoft. Content based on publicly available documentation. Always verify against the latest [Microsoft documentation](https://learn.microsoft.com/en-us/). Last reviewed: April 2026.*
 
 ---
 

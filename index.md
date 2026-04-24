@@ -114,7 +114,7 @@ flowchart LR
     CT["📄 Contracts\n(Unified/Premier)"]
     DM["🛡️ Digital\nMIRP"]
     SH["🔄 Hub vs\nEngage Center"]
-    CS["⚡ Cheatsheet\n(field reference)"]
+    CS["⚡ Cheatsheet\n(reference)"]
 
     OV --> NF --> SR --> CT --> DM --> SH --> CS
 ```

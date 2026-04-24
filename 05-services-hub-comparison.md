@@ -196,7 +196,7 @@ flowchart TD
 
 ---
 
-## Related
+## Related Content
 
 - 🌐 [00 — Platform Overview](/engage-center-notes/00-overview/) — Engage Center context
 - 🧭 [01 — Navigation & Features](/engage-center-notes/01-navigation-features/) — Engage Center UI walkthrough

@@ -220,7 +220,7 @@ flowchart LR
 
 ---
 
-## Related
+## Related Content
 
 - 🎫 [02 — Support Requests](/engage-center-notes/02-support-requests/) — SLA reference by severity
 - 🛡️ [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) — proactive IR service (Advanced/Performance)
