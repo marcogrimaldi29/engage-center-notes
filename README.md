@@ -4,7 +4,7 @@
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://marcogrimaldi29.com/engage-center-notes/)
 [![Personal Hub](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 
-> - 🎯 **Goal:** Field reference for Cloud Solutions Architects working with Microsoft Engage Center and Unified Support customers
+> - 🎯 **Goal:** Deep dive for Cloud Solutions Architects working with Microsoft Engage Center and Unified Support customers
 > - 📅 **Notes Version:** 2026 (updated as the platform evolves)
 > - 🌐 **Published site:** [Engage Center Notes](https://marcogrimaldi29.com/engage-center-notes/)
 > - ✍️ **Author:** [Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)
