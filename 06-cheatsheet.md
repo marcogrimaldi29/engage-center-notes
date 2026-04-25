@@ -2,7 +2,7 @@
 layout: default
 title: "06 — Quick Reference Cheatsheet"
 nav_order: 8
-description: "Engage Center quick reference: key URLs, severity SLA table, contract tier comparison, escalation paths, MIRP checklist, and CSA tips."
+description: "Engage Center quick reference: key URLs, severity reference, Microsoft Unified offering, escalation paths, MIRP checklist, and CSA tips."
 permalink: /06-cheatsheet/
 mermaid: false
 ---
@@ -40,33 +40,34 @@ mermaid: false
 
 ---
 
-## ⏱️ Severity SLA Reference
+## ⏱️ Severity Reference
 
-| Severity | Business Impact | Core | Advanced | Performance | Legacy Premier |
-|----------|----------------|:----:|:--------:|:-----------:|:--------------:|
-| **A — Critical** | Business down, no workaround | NBD | ≤ 1h 24/7 | ≤ 1h 24/7 | ≤ 1h 24/7 |
-| **B — High** | Major impact, partial workaround | NBD | ≤ 2h 24/7 | ≤ 2h 24/7 | ≤ 2h 24/7 |
-| **C — General** | Minor / question | NBD | ≤ 4h BH | ≤ 4h BH | ≤ 4h BH |
+| Severity | Business Impact | Microsoft Unified | Legacy Premier |
+|----------|----------------|:-----------------:|:--------------:|
+| **A — Critical** | Business down, no workaround | ≤ 1h 24/7 | ≤ 1h 24/7 |
+| **B — High** | Major impact, partial workaround | ≤ 2h 24/7 | ≤ 2h 24/7 |
+| **C — General** | Minor / question | ≤ 4h BH | ≤ 4h BH |
 
-**NBD** = Next Business Day · **BH** = Business Hours · **24/7** = Around the clock
+**BH** = Business Hours · **24/7** = Around the clock
 
 > ⚠️ Initial response time only — not resolution time. Resolution is not contractually guaranteed.
 
 ---
 
-## 📄 Unified Support Tier Comparison
+## 📄 Microsoft Unified — What's Officially Documented
 
-| Feature | Core | Advanced | Performance |
-|---------|:----:|:--------:|:-----------:|
-| 24/7 Severity A support | ❌ | ✅ | ✅ |
-| Dedicated CSAM | ❌ | ✅ | ✅ (Senior) |
-| Designated Support Engineer (DSE) | ❌ | Add-on | ✅ |
-| On-Demand Assessments | Limited | ✅ | ✅ Priority |
-| Digital MIRP | ❌ | ✅ | ✅ |
-| Proactive hours pool | Limited | Included | Expanded |
-| Executive escalation | ❌ | ❌ | ✅ |
-| Custom engagements | ❌ | Limited | ✅ |
-| Engage Center access | ✅ | ✅ | ✅ |
+| Attribute | Detail |
+|-----------|--------|
+| **Official name** | Microsoft Unified / Unified Enterprise Plan |
+| **Service categories** | **Value Acceleration Services** (proactive, strategic) · **Mission Critical Services** (reactive break-fix, incident response) |
+| **CSAM** | Included — named account manager for relationship and success planning |
+| **DSE** | Available — scope defined in the individual agreement |
+| **On-Demand Assessments** | Available — scope defined in the individual agreement |
+| **Proactive hours** | Annual pool — volume defined in the individual agreement |
+| **Portal** | Engage Center (`engagecenter.microsoft.com`) |
+| **Entitlements** | Response SLAs as per Severity Reference above; proactive hours, named resources (CSAM, DSE), and additional services defined per negotiated contract |
+
+> 💡 For the specifics of what a customer is entitled to, navigate to **Customer Activity** in Engage Center or ask their CSAM. The contract document is the authoritative source.
 
 ---
 
@@ -115,7 +116,7 @@ Issue unresolved / response inadequate
     ↓
 4. CSAM escalates to Microsoft support manager
     ↓
-5. CSAM escalates to Account Executive / Engineering (Performance tier)
+5. CSAM escalates to Account Executive / Engineering (subject to agreement)
 ```
 
 ---
@@ -163,11 +164,11 @@ Issue unresolved / response inadequate
 
 | Situation | Tip |
 |-----------|-----|
-| First call with a new Unified customer | Start in **Account → Contract** to understand their tier and hours |
+| First call with a new Unified customer | Start in **Customer Activity** in Engage Center to understand their entitlements and hours pool |
 | Customer says "our cases take too long" | Check severity assigned and whether "Waiting for Customer" time is inflating perceived response time |
-| Customer wants to know what proactive services they can use | Go to **Services catalogue** in Engage Center and filter by what's included in their tier |
+| Customer wants to know what proactive services they can use | Go to **Services catalogue** in Engage Center — available services reflect what's included in their agreement |
 | Customer asks about Services Hub retirement | "No firm date yet. Both portals work. Default to Engage Center, Services Hub still there if needed." |
-| Customer considers upgrading from Core to Advanced | Key value prop: 24/7 Sev A response + dedicated CSAM + On-Demand Assessments |
+| Customer wants to expand their Unified entitlements | Key additions to ask CSAM about: 24/7 Sev A response, dedicated CSAM, DSE, On-Demand Assessments — entitlements are contract-specific, not a fixed published tier |
 | Preparing for a QBR | Pull 90-day case and service consumption reports from **Analytics** |
 | Customer has a security incident | Do NOT use MIRP — open a **Severity A security case** and/or engage DART |
 

@@ -41,11 +41,11 @@ Engage Center is part of Microsoft's broader initiative to modernise customer to
 
 | Milestone | Detail |
 |-----------|--------|
-| **Premier → Unified transition** | New Premier contracts ceased; Unified Support (Core / Advanced / Performance) launched |
+| **Premier → Unified transition** | New Premier contracts ceased; Microsoft Unified (Unified Enterprise Plan) launched |
 | **Services Hub** | Web portal introduced as the primary interface for Unified customers |
 | **Engage Center GA** | Rolling out from 2024–2025; progressively replacing Services Hub for most workflows |
 | **Parallel operation** | Both portals remain active during transition; certain features still only in Services Hub |
-| **Full migration** | Target: most customers migrated by end of 2025 (subject to change) |
+| **Full migration** | No firm date published by Microsoft — both portals remain active; check with your CSAM for your organisation's status |
 
 > ⚠️ The rollout is phased. Not all features are available to all customers simultaneously. Check your account team for your organisation's migration timeline.
 
@@ -147,7 +147,7 @@ The platform is designed to support **all four phases** of the support lifecycle
 
 | Term | Definition |
 |------|-----------|
-| **Unified Support** | Microsoft's current support contract model (replaced Premier) — three tiers: Core, Advanced, Performance |
+| **Unified Support** | Microsoft's current support contract model (replaced Premier) — officially branded **Microsoft Unified** / Unified Enterprise Plan; entitlements defined per individual agreement |
 | **Premier Support** | Legacy contract model, still active for existing customers but no longer sold as new |
 | **CSAM** | Customer Success Account Manager — your primary Microsoft relationship contact |
 | **DSE** | Designated Support Engineer — deep technical resource assigned under some contracts |

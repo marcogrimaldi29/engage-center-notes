@@ -129,7 +129,7 @@ flowchart LR
     BROWSE --> SELECT --> CSAM --> SCHEDULE --> DELIVER --> REPORT
 ```
 
-> ⚠️ Service availability depends on your contract tier and remaining hours. Your CSAM can advise on entitlements.
+> ⚠️ Service availability depends on your agreement and remaining hours pool. Your CSAM can advise on what's included in your contract.
 
 ---
 
@@ -154,7 +154,7 @@ Manage your relationship with your Microsoft account team and your organisation'
 | Contact Type | Role | How to Reach |
 |-------------|------|-------------|
 | **CSAM** | Primary relationship manager, success planning | Shown in portal; email / Teams |
-| **DSE** | Deep technical resource for escalations | Assigned per contract tier |
+| **DSE** | Deep technical resource for escalations | Availability defined per agreement |
 | **CSA** | Cloud architecture advisory | Engaged through proactive services |
 | **Premier Field Engineer (PFE)** | Legacy title (some still active) | As per existing contract |
 | **Account Executive / AE** | Commercial relationship | Not in Engage Center directly |
@@ -175,7 +175,6 @@ The Analytics section provides visibility into your support consumption and serv
 | **Resolution Time** | Average time to resolution by severity and product |
 | **Service Consumption** | Hours consumed vs entitlement, by service type |
 | **Top Issue Areas** | Most common product/workload areas for your org |
-| **Health Score** | Microsoft-computed environment health indicator |
 | **CSA Activity** | Advisory and proactive service engagement summary |
 
 > 💡 Export to CSV or PDF is available for most reports — useful for internal reporting or QBR preparation.

@@ -2,7 +2,7 @@
 layout: default
 title: "02 — Support Requests"
 nav_order: 4
-description: "Creating, managing, and escalating Microsoft support cases through Engage Center. Severity levels, SLA targets, routing logic, and best practices."
+description: "Creating, managing, and escalating Microsoft support cases through Engage Center. Severity levels, response targets, routing logic, and best practices."
 permalink: /02-support-requests/
 mermaid: true
 ---
@@ -33,13 +33,13 @@ The **Support** section of Engage Center is the primary interface for creating a
 
 Microsoft uses severity (also called **priority** in some product areas) to determine initial response time:
 
-| Severity | Business Impact | Initial Response Target |
-|----------|----------------|------------------------|
-| **Severity A / Critical** | Complete business outage or critical production system down; no workaround | **≤ 1 hour** (Unified Advanced/Performance) |
-| **Severity B / High** | Significant feature loss, major performance degradation; partial workaround possible | **≤ 2 hours** (Unified Advanced/Performance) |
+| Severity | Business Impact | Initial Response |
+|----------|----------------|-----------------|
+| **Severity A / Critical** | Complete business outage or critical production system down; no workaround | **≤ 1 hour** (24/7) |
+| **Severity B / High** | Significant feature loss, major performance degradation; partial workaround possible | **≤ 2 hours** (24/7) |
 | **Severity C / General** | Minor impact, question, or general guidance request | **≤ 4 business hours** |
 
-> ⚠️ Initial response time SLAs apply to **Unified Advanced** and **Unified Performance** contracts. **Unified Core** receives next-business-day response for Severity A/B. See [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) for full tier comparison.
+> ⚠️ These are **initial response** targets, not resolution time targets. Response times apply to Microsoft Unified and Legacy Premier. See [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) for entitlement context.
 
 ---
 
@@ -143,7 +143,7 @@ flowchart TD
 | **Update severity** | Impact has increased since case was filed |
 | **Manager escalation request** | Engineer responsiveness inadequate for the business impact |
 | **Contact CSAM** | Most effective for Severity A — your CSAM can directly accelerate |
-| **Premier/Executive escalation** | Available under Unified Performance; CSAM coordinates |
+| **Executive escalation** | Available subject to agreement; CSAM coordinates with Account Executive or Engineering |
 
 > 💡 Always **update the case notes** when you escalate, documenting the business impact clearly. This creates a paper trail and helps the support engineer's manager prioritise.
 
@@ -189,13 +189,11 @@ Different Microsoft product areas have slightly different case routing:
 
 ---
 
-## SLA Reference Table
+## Response Target Reference
 
-| Contract Tier | Severity A Initial Response | Severity B Initial Response | Severity C Initial Response |
-|--------------|----------------------------|-----------------------------|------------------------------|
-| **Unified Core** | Next business day | Next business day | Next business day |
-| **Unified Advanced** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
-| **Unified Performance** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
+| Contract | Severity A | Severity B | Severity C |
+|----------|:----------:|:----------:|:----------:|
+| **Microsoft Unified** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
 | **Legacy Premier** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
 
 > ⚠️ These are **initial response** targets, not resolution time targets. Resolution time varies by complexity and is not contractually guaranteed.
@@ -204,7 +202,7 @@ Different Microsoft product areas have slightly different case routing:
 
 ## Related
 
-- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — understand which SLA tier applies to your organisation
+- 📄 [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) — Microsoft Unified offering and entitlement context
 - 🔄 [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) — case creation differences
 - ⚡ [06 — Cheatsheet](/engage-center-notes/06-cheatsheet/) — quick severity/SLA reference
 
