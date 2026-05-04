@@ -152,7 +152,7 @@ The platform is designed to support **all four phases** of the support lifecycle
 | **CSAM** | Customer Success Account Manager — your primary Microsoft relationship contact |
 | **DSE** | Designated Support Engineer — deep technical resource assigned under some contracts |
 | **On-Demand Assessment** | Automated or guided technical health check (formerly called "Rapid Assessment Proactive Service") |
-| **MIRP** | Microsoft Incident Response Planning — proactive service for IR readiness |
+| **MIRP** | Major Incident Response Plan — self-service portal tool in Engage Center for IR readiness |
 | **Proactive Service** | Any Microsoft-delivered service consumed from contract hours (not a break-fix case) |
 | **Severity / Priority** | Case urgency level (A = business-critical, B = significant, C = general) |
 | **ICM** | Internal Microsoft case management system — what CSAMs and DSEs use behind the scenes |

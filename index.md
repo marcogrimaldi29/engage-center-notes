@@ -83,7 +83,7 @@ flowchart TD
 
 <div style="border:1px solid #005a9e; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🛡️ 04 — Digital MIRP</h3>
-<p>Digital delivery of the Microsoft Incident Response Planning service — scope, deliverables, and how to engage.</p>
+<p>Major Incident Response Plan — self-service portal tool in Engage Center for workload inventory, contacts, and IR readiness.</p>
 <a href="/engage-center-notes/04-digital-mirp/" class="btn btn-outline fs-5">Read →</a>
 </div>
 

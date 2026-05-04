@@ -56,7 +56,7 @@ engage-center-notes/
 - **Unified Support tiers** — Core / Advanced / Performance compared side-by-side
 - **Legacy Premier Support** — what it was, how it maps to Unified, migration path
 - **Support cases** — severity levels, SLA targets, case lifecycle, escalation
-- **Digital MIRP** — Microsoft Incident Response Planning, digital delivery track
+- **Digital MIRP** — Major Incident Response Plan, self-service portal tool in Engage Center
 - **Services Hub → Engage Center** — what moved, what hasn't, transition guidance
 - **Proactive services** — On-Demand Assessments, advisory, MIRP, workshops
 - **CSA field tips** — practical guidance for working with customers on the platform
