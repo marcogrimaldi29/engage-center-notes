@@ -110,7 +110,7 @@ The Services section exposes **proactive services** included with your Unified S
 | **On-Demand Assessments** | Automated or guided health checks (Azure Well-Architected, Security, Identity, etc.) |
 | **Advisory Services** | Scheduled technical advisory sessions with a DSE or CSA |
 | **Workshops & Briefings** | Microsoft-delivered education sessions |
-| **MIRP** | Microsoft Incident Response Planning — see [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) |
+| **MIRP** | Major Incident Response Plan — see [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) |
 | **Rapid Response** | Accelerated resolution for critical proactive engagements |
 | **Custom Engagements** | Contract-specific services negotiated with your CSAM |
 
