@@ -42,10 +42,10 @@ Engage Center is rolling out progressively across Microsoft's customer base and 
 flowchart TD
     EC["🌐 Engage Center\nengagecenter.microsoft.com"]
     EC --> SR["🎫 Support Requests\n(Cases & SRs)"]
-    EC --> PA["👤 Account & Contacts\n(CSAMs, TAMs)"]
-    EC --> PS["📋 Proactive Services\n(Assessments, MIRP)"]
+    EC --> PA["👤 User Management\n& MIRP Contacts"]
+    EC --> PS["🛡️ MIRP & Incident\nReadiness"]
     EC --> LR["🎓 Learning &\nResources"]
-    EC --> AN["📊 Analytics &\nReporting"]
+    EC --> AN["📊 Support Insights\n(Analytics)"]
     EC --> SH["🔄 Services Hub\n(legacy, parallel)"]
     style EC fill:#0078d4,color:#fff,stroke:#005a9e
     style SH fill:#444,color:#ccc,stroke:#666
@@ -71,13 +71,13 @@ flowchart TD
 
 <div style="border:1px solid #48cae4; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🎫 02 — Support Requests</h3>
-<p>Creating, managing, and escalating support cases. SLA tiers, severity levels, and routing logic.</p>
+<p>Creating, managing, and escalating support cases. Severity levels, response targets, and escalation paths.</p>
 <a href="/engage-center-notes/02-support-requests/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #0090b0; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">📄 03 — Unified & Premier Contracts</h3>
-<p>Unified Core / Advanced / Performance tiers vs legacy Premier. Benefits, SLAs, and entitlements explained.</p>
+<p>Microsoft Unified (Unified Enterprise Plan) vs legacy Premier. Value Acceleration &amp; Mission Critical services, entitlements, and what to look for as a CSA.</p>
 <a href="/engage-center-notes/03-unified-premier-contracts/" class="btn btn-outline fs-5">Read →</a>
 </div>
 

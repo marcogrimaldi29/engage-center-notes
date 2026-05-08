@@ -61,7 +61,7 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 | **1 — Support foundations** | Case Create, Support Management |
 | **2 — Everyday support context** | External Resources, Digital MIRP, Learning, Support Insights |
 | **3 — Collaboration & artifacts** | Shared Files |
-| **4 — Administration & structure** | Access Management, Space Management |
+| **4 — Administration & structure** | User Management, Space Management |
 | **5 — Organisation & communications** | Customer Level Workspace, Newsletter, Customer Activity |
 | **6 — On-Demand Assessments** | Assessments (last to transition) |
 
@@ -86,8 +86,8 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Services catalogue** | ✅ | ✅ Improved | Engage Center has expanded catalogue UI |
-| **Schedule a service** | ✅ | ✅ | |
+| **Services catalogue** | ✅ | ⚠️ CSAM-coordinated | Proactive services are scheduled through your CSAM, not a self-service catalogue |
+| **Schedule a service** | ✅ | ⚠️ Via CSAM | Contact your CSAM to schedule proactive services |
 | **On-Demand Assessments** | ✅ | ✅ | Last feature to transition (Phase 6) |
 | **Service reports / findings** | ✅ | ✅ Improved | Engage Center has richer report viewer |
 | **Hours consumption tracking** | ✅ | ✅ | |
@@ -108,16 +108,17 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Learning paths** | ⚠️ Basic | ✅ Full | Engage Center has deeper Microsoft Learn integration |
-| **Events calendar** | ⚠️ Basic | ✅ | |
+| **Learning paths / On-Demand Learning** | ⚠️ Basic | ✅ Full | Includes Microsoft Learn modules, learning paths, and hands-on labs; progress tracked |
+| **Scheduled Services (instructor-led)** | ❌ | ✅ | Browse and register for instructor-led sessions directly — new in Engage Center |
+| **My Learning** | ❌ | ✅ | Personalised progress view: Not Started / In Progress / Completed; assigned learning |
+| **Learning Management** | ❌ | ✅ | Assign learning to teams, set due dates, track completion — requires Learning Manager role |
 | **Content library** | ✅ | ✅ | |
-| **Role-based recommendations** | ❌ | ✅ | New in Engage Center |
 
 ### Support Insights & Reporting
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Case volume trend** | ✅ | ✅ Improved | More visualisation options; 6 months of data |
+| **Case volume trend** | ✅ | ✅ Improved | More visualisation options; 18 months of data |
 | **Initial Response (IR) Met %** | ⚠️ Basic | ✅ | Tracks SLA compliance over time |
 | **CritSit tracking** | ⚠️ Basic | ✅ | Sev A count + elapsed critical minutes |
 | **Cross-cloud case distribution** | ❌ | ✅ | Azure + M365 + other products in one view |
@@ -141,12 +142,12 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 | Improvement | Detail |
 |-------------|--------|
 | **Modern UI/UX** | Built on Azure; Fluent Design System, consistent with M365 Admin Center and Azure Portal |
-| **Learning integration** | Deep Microsoft Learn integration with role-based recommendations |
+| **Learning integration** | Unified learning experience: On-Demand Learning, Scheduled Services (instructor-led), My Learning progress tracking, and Learning Management for teams |
 | **Support Insights** | 6 months of cross-cloud data; IR Met %, CritSit tracking, case distribution by product |
 | **Digital MIRP** | Fully digital, self-service; replaces static PowerPoint decks |
 | **External Resources** | Centralised management of external tenant links and resources |
 | **User management** | Microsoft Entra group-based role management with granular permissions |
-| **Services catalogue** | Cleaner browsing and scheduling experience |
+| **Customer Activity** | Centralised view of contract details, entitlement hours, and purchased services |
 | **Report viewer** | Better in-portal viewing of proactive service findings |
 | **Shared Files** | Account team can upload documents directly into the portal |
 
@@ -177,7 +178,7 @@ Based on the official rollout order, features later in the phase sequence may st
 flowchart TD
     START{"What do you need?"}
     START -->|"Create or update a case"| EC1["✅ Use Engage Center\n(preferred)"]
-    START -->|"Schedule a proactive service"| EC2["✅ Use Engage Center\n(preferred)"]
+    START -->|"Schedule a proactive service"| EC2["✅ Contact your CSAM\n(services are CSAM-coordinated)"]
     START -->|"View old case from before migration"| SH1["⚠️ Check Services Hub\nif not in Engage Center"]
     START -->|"Access a legacy Premier service type"| SH2["⚠️ Services Hub\nmay be needed"]
     START -->|"View learning content"| EC3["✅ Use Engage Center\n(better experience)"]

@@ -81,7 +81,7 @@ stateDiagram-v2
 ```mermaid
 %%{init: {"theme":"dark"}}%%
 flowchart TD
-    S1["1️⃣ Support → New Request"]
+    S1["1️⃣ Support → Help + Support"]
     S2["2️⃣ Select product / service area\n(Azure, M365, Dynamics, Windows Server, etc.)"]
     S3["3️⃣ Describe the problem\n(title + description)"]
     S4["4️⃣ Select severity\n(A / B / C)"]
@@ -92,6 +92,12 @@ flowchart TD
 
     S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
 ```
+
+> 💡 Two case creation experiences are available in Engage Center:
+> - **Enhanced experience** — self-help form with product/problem selectors and recommended KB articles before submission
+> - **Support AI Assistant** — AI-guided troubleshooting flow; creates a case if self-help does not resolve the issue
+>
+> To identify which experience your workspace has: navigate to **Support → Help + Support** and check whether you see a form or an AI assistant prompt. Only users with the **Support User** role can create support cases.
 
 ### Tips for a Strong Case Description
 
