@@ -59,15 +59,15 @@ The primary left-nav sections (current GA rollout):
 |---------|------|-----------------|
 | **Home** | 🏠 | Dashboard — activity feed, quick links, recent activity |
 | **Support** | 🎫 | Create and manage support requests (cases) |
-| **On-Demand Assessments** | 🔍 | Run automated health assessments across your Microsoft environments |
-| **Learning** | 🎓 | On-demand learning, instructor-led sessions, and learning management |
-| **Major Incident Response Plan** | 🛡️ | MIRP — workload inventory, contacts, response guidelines, Azure Health |
 | **Support Insights** | 📊 | Analytics and reporting on support consumption and case trends |
-| **Customer Activity** | 📄 | Contract details, entitlement consumption, purchased services |
 | **Shared Files** | 📁 | Securely access and download files shared by your account team |
-| **External Resources** | 🔗 | Manage links and access to external tenants and resources |
+| **Customer Activity** | 📄 | Contract details, entitlement consumption, purchased services |
+| **Major Incident Response Plan** | 🛡️ | MIRP — workload inventory, contacts, response guidelines, Azure Health |
+| **Learning** | 🎓 | On-demand learning, instructor-led sessions, and learning management |
+| **On-Demand Assessments** | 🔍 | Run automated health assessments across your Microsoft environments |
 | **User Management** | 👤 | User roles and Microsoft Entra group assignments |
 | **Settings** | ⚙️ | Notification preferences, portal features, personalisation |
+| **External Resources** | 🔗 | Manage links and access to external tenants and resources |
 
 > ⚠️ Navigation availability varies by rollout phase and customer workspace type. Features transition progressively from Services Hub — not all sections may be visible until your workspace is fully migrated. See [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) for the rollout phase order.
 
