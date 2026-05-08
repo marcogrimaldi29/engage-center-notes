@@ -132,7 +132,7 @@ flowchart LR
 | View entitlement hours remaining | **Customer Activity** |
 | View Support Insights & case analytics | **Support Insights** |
 | Add/remove user permissions | **User Management** (Entra group-based) |
-| Manage Microsoft Entra groups | **Access Management** |
+| Manage Microsoft Entra groups | **User Management** |
 | Request contract amendment | Contact your CSAM directly |
 | View invoice history | Not in Engage Center — contact your Microsoft Account Executive |
 

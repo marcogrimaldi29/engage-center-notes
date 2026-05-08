@@ -159,9 +159,10 @@ The **Azure Health** section is available to Azure customers and provides two su
 
 | Requirement | Detail |
 |-------------|--------|
-| **Portal access** | Must have a role in Engage Center that grants MIRP access — see [Engage Center Roles](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/) |
+| **Enable in Settings** | MIRP must be enabled via **Settings → Features** before it appears in the left nav; can be toggled per workspace or across all workspaces via the rollup workspace; single-workspace customers cannot toggle it off once enabled |
+| **Mirp Manager role** | Required to add contacts, attest solutions, add/enable tenants, and have full MIRP oversight |
+| **Mirp Viewer role** | Can create and edit solutions and toggle tenants on/off; cannot add tenants, add contacts, or attest |
 | **Contract** | Requires an active Microsoft customer agreement with appropriate entitlements — confirm with your CSAM |
-| **Admin rights** | Contact management (adding/editing contacts) requires administrator role |
 | **Azure workload visibility** | Workloads must be onboarded via the Proactive Resiliency Program |
 
 ---

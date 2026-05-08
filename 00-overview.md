@@ -26,10 +26,11 @@ mermaid: true
 **Microsoft Engage Center** (`engagecenter.microsoft.com`) is the next-generation customer experience portal for organisations with a **Microsoft Unified Support** agreement (and, progressively, select Premier customers). It is designed as the single, modernised destination for:
 
 - Filing and tracking **support cases**
-- Accessing **proactive services** (On-Demand Assessments, health checks, MIRP)
-- Managing **contacts and account teams** (CSAMs, TAMs, DSEs)
+- Accessing **proactive services** (On-Demand Assessments, coordinated through your CSAM)
+- Maintaining the **Major Incident Response Plan (MIRP)** and **Incident Readiness** guidance
+- Managing **account team contacts** and user access (via MIRP and User Management)
 - Consuming **learning paths** and Microsoft-curated content
-- Viewing **analytics** on support consumption and service health
+- Viewing **Support Insights** on support consumption and case trends
 
 > **Key distinction:** Engage Center is not a new support *contract* — it is a new *portal experience* layered on top of existing Unified Support entitlements.
 
@@ -77,9 +78,9 @@ flowchart TD
 
 | Persona | Role | Primary Engage Center Activity |
 |---------|------|-------------------------------|
-| **IT Admin** | Contract & licence management | Account settings, contacts, contract details |
+| **IT Admin** | Contract & licence management | Customer Activity (contract details), User Management |
 | **Engineer / Architect** | Hands-on workload owner | Support cases, On-Demand Assessments, learning |
-| **CSAM** | Relationship + success planning | Account health, proactive service scheduling |
+| **CSAM** | Relationship + success planning | MIRP maintenance, proactive service coordination |
 | **DSE** | Deep technical escalation | Case collaboration, advisory |
 | **CSA** | Solution architecture guidance | Assessment reviews, MIRP, technical advisory |
 
@@ -119,7 +120,7 @@ Engage Center sits at the intersection of **reactive support** (cases) and **pro
 flowchart TD
     PRE["📋 Pre-incident\nProactive Services\n(Assessments, MIRP planning)"]
     DURING["🚨 During Incident\nSupport Case + DSE\n(Severity A/B escalation)"]
-    POST["📊 Post-incident\nReview & Analytics\n(lessons learned, health score)"]
+    POST["📊 Post-incident\nSupport Insights\n(lessons learned, case trends)"]
     PLAN["🗓️ Success Planning\nCSAM-led\n(QBRs, roadmap alignment)"]
 
     PLAN --> PRE --> DURING --> POST --> PLAN
@@ -149,11 +150,13 @@ The platform is designed to support **all four phases** of the support lifecycle
 |------|-----------|
 | **Unified Support** | Microsoft's current support contract model (replaced Premier) — officially branded **Microsoft Unified** / Unified Enterprise Plan; entitlements defined per individual agreement |
 | **Premier Support** | Legacy contract model, still active for existing customers but no longer sold as new |
-| **CSAM** | Customer Success Account Manager — your primary Microsoft relationship contact |
+| **CSAM** | Customer Success Account Manager — your primary **Microsoft** relationship contact *(Microsoft employee)* |
+| **CSM** | Customer Support Manager — the **customer-side** workspace owner role in Engage Center *(not to be confused with CSAM)* |
 | **DSE** | Designated Support Engineer — deep technical resource assigned under some contracts |
-| **On-Demand Assessment** | Automated or guided technical health check (formerly called "Rapid Assessment Proactive Service") |
+| **On-Demand Assessment** | Automated health check using Azure Log Analytics and the Engage Center Connector; assesses availability, security, and performance |
+| **Scheduled Services** | Instructor-led learning sessions and workshops within the Learning section of Engage Center — distinct from consulting/advisory proactive services |
 | **MIRP** | Major Incident Response Plan — self-service portal tool in Engage Center for IR readiness |
-| **Proactive Service** | Any Microsoft-delivered service consumed from contract hours (not a break-fix case) |
+| **Proactive Service** | Any Microsoft-delivered consulting or advisory service consumed from contract hours (not a break-fix case or learning session) |
 | **Severity / Priority** | Case urgency level (A = business-critical, B = significant, C = general) |
 | **ICM** | Internal Microsoft case management system — what CSAMs and DSEs use behind the scenes |
 

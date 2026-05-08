@@ -166,10 +166,10 @@ Issue unresolved / response inadequate
 |-----------|-----|
 | First call with a new Unified customer | Start in **Customer Activity** in Engage Center to understand their entitlements and hours pool |
 | Customer says "our cases take too long" | Check severity assigned and whether "Waiting for Customer" time is inflating perceived response time |
-| Customer wants to know what proactive services they can use | Go to **Services catalogue** in Engage Center — available services reflect what's included in their agreement |
+| Customer wants to know what proactive services they can use | Check **Customer Activity** for entitlement hours, then ask the CSAM what services are available under the agreement |
 | Customer asks about Services Hub retirement | "No firm date yet. Both portals work. Default to Engage Center, Services Hub still there if needed." |
 | Customer wants to expand their Unified entitlements | Key additions to ask CSAM about: 24/7 Sev A response, dedicated CSAM, DSE, On-Demand Assessments — entitlements are contract-specific, not a fixed published tier |
-| Preparing for a QBR | Pull 90-day case and service consumption reports from **Analytics** |
+| Preparing for a QBR | Pull 90-day case reports from **Support Insights** and entitlement consumption from **Customer Activity** |
 | Customer has a security incident | Do NOT use MIRP — open a **Severity A security case** and/or engage DART |
 
 ---
@@ -178,12 +178,14 @@ Issue unresolved / response inadequate
 
 | Section | Path |
 |---------|------|
-| Create new case | Support → New Request |
+| Create new case | Support → Help + Support (Enhanced form or Support AI Assistant) |
 | View all open cases | Support → All Requests → filter by Status: Open |
-| Browse proactive services | Services → Catalogue |
-| View my CSAM contact | People & Contacts → Account Team |
-| Check contract hours | Account → Entitlements |
-| Pull case analytics | Analytics → Case Volume |
+| Browse instructor-led learning | Learning → Scheduled Services |
+| Browse self-paced learning | Learning → On-Demand Learning |
+| Contact CSAM for consulting services | Reach out via CSAM directly — advisory/custom services are CSAM-coordinated |
+| View my CSAM contact | Major Incident Response Plan → Your Account Team |
+| Check contract hours | Customer Activity (requires Contract Manager role) |
+| Pull case analytics | Support Insights (requires Reporting User role) |
 | Configure notifications | Settings → Notifications |
 
 ---
