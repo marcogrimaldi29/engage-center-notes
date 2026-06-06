@@ -99,6 +99,14 @@ This site uses **[Umami](https://umami.is/)** for privacy-friendly, cookieless a
 
 ---
 
+## ⭐ Support This Project
+
+If you found these notes useful for your work, consider giving the repo a **star on GitHub** — it helps increase visibility and supports the effort behind keeping this content up to date. Thank you! 🙌
+
+[⭐ Star on GitHub](https://github.com/marcogrimaldi29/engage-center-notes){: .btn .btn-outline .fs-5 }
+
+---
+
 ## ©️ Credits & Acknowledgements
 
 The **[Just the Docs](https://github.com/just-the-docs/just-the-docs)** theme is used for the documentation layout. Licensed under [MIT](https://opensource.org/license/MIT).
