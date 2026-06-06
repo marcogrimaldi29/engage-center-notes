@@ -1,16 +1,16 @@
 ---
 layout: home
-title: Engage Center Notes
+title: Microsoft Engage Center — Deep Dive
 nav_order: 1
-description: "Microsoft Engage Center — reference notes for Cloud Solutions Architects covering the portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison."
+description: "Microsoft Engage Center — Companion notes and deep dive coverage of the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison."
 permalink: /
 mermaid: true
 ---
 
-# 🤝 Microsoft Engage Center — CSA Reference Notes
+# 🤝 Microsoft Engage Center — Deep Dive
 {: .no_toc }
 
-**Cloud Solutions Architect Deep Dive**
+**Companion notes covering the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison**
 {: .fs-5 .fw-300 }
 
 [Get Started →](/engage-center-notes/00-overview){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -18,7 +18,7 @@ mermaid: true
 
 ---
 
-> 🏠 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solutions Architect.
+> 🏠 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solution Architect.
 > Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/)**.
 > Find more notes and content at **[🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**.
 > *Not affiliated with or endorsed by Microsoft. Always verify against the latest documentation.*
