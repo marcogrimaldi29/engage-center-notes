@@ -1,12 +1,12 @@
-# 🤝 Microsoft Engage Center — CSA Reference Notes
+# 🤝 Microsoft Engage Center — Deep Dive
 
 [![Deploy to GitHub Pages](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml/badge.svg)](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://marcogrimaldi29.com/engage-center-notes/)
 [![Personal Hub](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 
-> - 🎯 **Goal:** Deep dive for Cloud Solutions Architects working with Microsoft Engage Center and Unified Support customers
+> - 🎯 **Goal:** Companion notes covering the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison
 > - 📅 **Notes Version:** 2026 (updated as the platform evolves)
-> - 🌐 **Published site:** [Engage Center Notes](https://marcogrimaldi29.com/engage-center-notes/)
+> - 🌐 **Published site:** [Microsoft Engage Center — Deep Dive](https://marcogrimaldi29.com/engage-center-notes/)
 > - ✍️ **Author:** [Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)
 
 ---
@@ -63,16 +63,6 @@ engage-center-notes/
 
 ---
 
-## 🌐 Published Site
-
-These notes are hosted on GitHub Pages and published at:
-
-👉 **[https://marcogrimaldi29.com/engage-center-notes/](https://marcogrimaldi29.com/engage-center-notes/)**
-
-The site uses **[Just the Docs](https://github.com/just-the-docs/just-the-docs)** for full-text search, Mermaid diagram rendering, and mobile-friendly navigation.
-
----
-
 ## 📄 Official Resources
 
 | Resource | Link |
@@ -87,7 +77,7 @@ The site uses **[Just the Docs](https://github.com/just-the-docs/just-the-docs)*
 
 ## ✍️ About the Author
 
-Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solutions Architect.
+Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solution Architect.
 
 🏠 Find more notes and content at **[🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**
 
@@ -103,7 +93,7 @@ This site uses **[Umami](https://umami.is/)** for privacy-friendly, cookieless a
 
 If you found these notes useful for your work, consider giving the repo a **star on GitHub** — it helps increase visibility and supports the effort behind keeping this content up to date. Thank you! 🙌
 
-[⭐ Star on GitHub](https://github.com/marcogrimaldi29/engage-center-notes){: .btn .btn-outline .fs-5 }
+[⭐ Star on GitHub](https://github.com/marcogrimaldi29/engage-center-notes)
 
 ---
 
