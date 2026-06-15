@@ -137,7 +137,7 @@ flowchart LR
 
 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solutions Architect.
 
-📍 **Find more content at [🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**
+📍 **Find more content at [🏠 marcogrimaldi29.com](https://marcogrimaldi29.com)**
 
 > This deep dive reflects hands-on experience working with Engage Center in a CSA capacity. Content is updated as the platform evolves. Always cross-check with the latest Microsoft documentation.
 
