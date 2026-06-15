@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml/badge.svg)](https://github.com/marcogrimaldi29/engage-center-notes/actions/workflows/pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://marcogrimaldi29.com/engage-center-notes/)
-[![Personal Hub](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
+[![marcogrimaldi29.com](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 
 > - 🎯 **Goal:** Companion notes covering the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison
 > - 📅 **Notes Version:** 2026 (updated as the platform evolves)

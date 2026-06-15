@@ -18,9 +18,9 @@ mermaid: true
 
 ---
 
-> 🏠 Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solution Architect.
+> Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solution Architect.
 > Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/)**.
-> Find more notes and content at **[🌐 marcogrimaldi29.com](https://marcogrimaldi29.com)**.
+> Find more notes and content at **[🏠 marcogrimaldi29.com](https://marcogrimaldi29.com)**.
 > *Not affiliated with or endorsed by Microsoft. Always verify against the latest documentation.*
 
 ---
