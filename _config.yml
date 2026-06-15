@@ -128,3 +128,4 @@ exclude:
   - SETUP.md
   - "*.sh"
   - ".git"
+  - ".claude"
