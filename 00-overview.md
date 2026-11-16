@@ -111,7 +111,7 @@ Engage Center sits at the intersection of **reactive support** (cases) and **pro
 %%{init: {"theme":"dark"}}%%
 flowchart TD
     PRE["📋 Pre-incident\nProactive Services\n(Assessments, MIRP planning)"]
-    DURING["🚨 During Incident\nSupport Case + DSE\n(Severity A/B escalation)"]
+    DURING["🚨 During Incident\nSupport Case + DSE\n(Severity 1 / A escalation)"]
     POST["📊 Post-incident\nSupport Insights\n(lessons learned, case trends)"]
     PLAN["🗓️ Success Planning\nCSAM-led\n(QBRs, roadmap alignment)"]
 
