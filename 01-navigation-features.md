@@ -2,9 +2,9 @@
 layout: default
 title: "01 — Navigation & Features"
 nav_order: 3
-description: "Engage Center UI walkthrough: key sections, global navigation, search, notifications, account settings, and productivity tips for daily use."
+description: "Engage Center walkthrough: left-nav sections, workspaces, support, MIRP, Support Insights, learning, user management, settings, and productivity tips for daily use."
 permalink: /01-navigation-features/
-mermaid: true
+mermaid: false
 ---
 
 # 01 — Navigation & Features
@@ -23,72 +23,48 @@ mermaid: true
 
 ## Portal Layout Overview
 
-Engage Center follows a **left-nav + main content** layout, consistent with other Microsoft portals (Azure Portal, M365 Admin Center).
+Engage Center uses a **left navigation + main content** layout. What you see in the left nav depends on your **workspace type**, the **services** associated with that workspace's agreements, the **features** turned on in Settings, and your **roles**.
 
-```mermaid
-%%{init: {"theme":"dark"}}%%
-flowchart TD
-    subgraph Shell["Browser Window"]
-        TOP["🔝 Top Bar — Search | Notifications | Profile | Help"]
-        subgraph Content["Main Area"]
-            LEFT["◀ Left Navigation\nCollapsible sidebar\nSection links"]
-            MAIN["Main Content Pane\nDashboard / Section view"]
-        end
-    end
-    TOP --> Content
-    LEFT --> MAIN
-```
-
-### Top Bar
-
-| Element | Function |
-|---------|----------|
-| **Search bar** | Global full-text search across cases, services, learning, and contacts |
-| **Notifications bell** | Alerts for case updates, scheduled services, and system messages |
-| **Profile/account** | Switch tenant, view profile, sign out |
-| **Help (?)** | Contextual documentation, support for the portal itself |
-| **Microsoft logo** | Returns to Home dashboard |
+> 💡 Microsoft groups Engage Center features into four areas: **Management & settings** (User and group management, Manage workspaces, Manage agreements, External resources), **Support & activity** (Customer activity, Support insights, Case creation, Shared files), **Health & readiness** (Digital MIRP, Azure health, On-demand assessments), and **Learning & updates** (Learning, Newsletter). See [Engage Center features](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/features).
 
 ---
 
 ## Left Navigation Sections
 
-The primary left-nav sections (current GA rollout):
-
 | Section | Icon | What You Do Here |
 |---------|------|-----------------|
-| **Home** | 🏠 | Dashboard — activity feed, quick links, recent activity |
-| **Support** | 🎫 | Create and manage support requests (cases) |
-| **Support Insights** | 📊 | Analytics and reporting on support consumption and case trends |
-| **Shared Files** | 📁 | Securely access and download files shared by your account team |
-| **Customer Activity** | 📄 | Contract details, entitlement consumption, purchased services |
-| **Major Incident Response Plan** | 🛡️ | MIRP — workload inventory, contacts, response guidelines, Azure Health |
-| **Learning** | 🎓 | On-demand learning, instructor-led sessions, and learning management |
-| **On-Demand Assessments** | 🔍 | Run automated health assessments across your Microsoft environments |
-| **User Management** | 👤 | User roles and Microsoft Entra group assignments |
-| **Settings** | ⚙️ | Notification preferences, portal features, personalisation |
-| **External Resources** | 🔗 | Manage links and access to external tenants and resources |
+| **Support** | 🎫 | **Help + Support** (Support AI Assistant, case creation, phone support) and the **Support Requests** list |
+| **Support Insights** | 📊 | Dashboards, AI-assisted **Ask & Explore**, and **Custom Reports** on support activity |
+| **Shared Files** | 📁 | Download (and, if permitted, delete) files shared by your CSAM or Incident Manager |
+| **Customer Activity** | 📄 | Agreement packages, the services in each, and their usage |
+| **Major Incident Response Plan** | 🛡️ | MIRP — Cloud Solutions, Your Account Team, Response Guidelines, Azure Health |
+| **On-Demand Assessments** | 🔍 | Run automated health assessments across your Microsoft environments (under **IT Health**) |
+| **Learning** | 🎓 | All Titles, On-Demand Learning, Scheduled Services, My Learning, Learning Management |
+| **Newsletter** | 📰 | Browse and subscribe to newsletters and Microsoft security briefings |
+| **User Management** | 👤 | Users, Microsoft Entra groups, roles, and (optionally) **Reactive Services** |
+| **External Resources** | 🔗 | Per-tenant Support Request Visibility, Login Access, and MIRP availability |
+| **Manage Agreements** / **Manage Workspaces** | 🗂️ | Agreement and service associations for a workspace; child workspaces (Rollup only) |
+| **Settings** | ⚙️ | **Features** toggles (MIRP, Newsletter, Granular Reactive Services) and **Newsletter settings** |
 
-> ⚠️ Navigation availability varies by rollout phase and customer workspace type. Features transition progressively from Services Hub — not all sections may be visible until your workspace is fully migrated. See [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) for the rollout phase order.
-
-> 💡 The left nav can be collapsed to icon-only mode — useful on smaller screens or when you want maximum content width.
+> ⚠️ Navigation availability varies by rollout phase, workspace type, and role. Features transition progressively from Services Hub — not all sections may be visible until your workspace is fully migrated. See [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) for the rollout phase order.
 
 ---
 
-## Home Dashboard
+## Workspaces
 
-The **Home** dashboard is your entry point after login. It is personalised based on your role and recent activity.
+Everything in Engage Center happens inside a **workspace**. Microsoft recommends a **single workspace** for most customers: all cases for the agreement land in one place, and tenant consent in External Resources is given once.
 
-### Dashboard Widgets
+| Workspace type | Purpose |
+|---------------|---------|
+| **Support Services** | Day-to-day support work for a specific set of agreements and services; shows only data assigned to it |
+| **Rollup** | Parent workspace aggregating multiple child Support Services workspaces — Support Management, Support Insights, Customer Activity, optional Digital MIRP, and **Manage Workspaces**. **Cases can't be created in a Rollup workspace** |
+| **Unified for Partner** | Operational workspace for partners enrolled in the Unified for Partner offering (no Rollup) |
 
-| Widget | Content |
-|--------|---------|
-| **Active Support Requests** | Open cases with status indicators |
-| **Upcoming Services** | Upcoming scheduled learning sessions and services |
-| **Recent Activity** | Latest updates across cases and services |
-| **Quick Actions** | One-click shortcuts: New Case, Request Service, etc. |
-| **Service Health** | Azure / M365 health status summary (linked to Azure Status) |
-| **Learning Highlights** | Recommended content based on your workloads |
+**Manage Workspaces** (Rollup only) lets administrators create, edit, link, and delete child workspaces, choose which agreements and services each child gets, and assign **Managed Administrators** (at least two per new workspace). In multi-workspace setups, some cases can't be auto-assigned — Rollup users use **Case Assignment** to route them to the right child workspace.
+
+**Manage Agreements** shows the agreements, packages, and services associated with the current workspace, and lets you add eligible agreements, enable or remove service associations, rename the workspace, or create a Rollup workspace.
+
+> 💡 See [Engage Center workspaces](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/workspaces) and [Manage Workspaces](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/manage-workspaces).
 
 ---
 
@@ -96,13 +72,11 @@ The **Home** dashboard is your entry point after login. It is personalised based
 
 The Support section is where you manage reactive break-fix cases. See [02 — Support Requests](/engage-center-notes/02-support-requests/) for full detail.
 
-**Key views:**
-- **All Requests** — filterable list of all open and closed cases
-- **My Requests** — cases you personally created or are watching
-- **Help + Support** — case creation entry point (two experiences available: Enhanced self-help form, or Support AI Assistant)
-- **Escalations** — cases flagged for management attention
+**Key areas:**
+- **Help + Support** — the **Support AI Assistant**: pick a product and problem type, get guided self-help, answer a few scoping questions, then select **Create support request**. A **Phone support** option lists regional numbers.
+- **Support Requests** — a filterable list (State, Severity, Product, Product family, Primary contact, Created date) of cases assigned to the workspace. Each case opens to **Overview**, **Communications**, **Attachments**, and **Sharing** tabs; the list can be exported.
 
-> 💡 Only users with the **Support User** role can create support cases. Administrators alone cannot open cases without also having the Support User role assigned.
+> 💡 Only users with the **Support User** role can create support cases. Administrators alone cannot open cases without also having the Support User role assigned. Microsoft users (including CSAMs) can't open cases on behalf of customers.
 
 ---
 
@@ -117,15 +91,15 @@ The **Major Incident Response Plan (MIRP)** is a self-service portal tool with i
 | **Response Guidelines** | Before / During / After incident guidance; searchable by topic |
 | **Azure Health** | Services Dashboard (subscription health alerts) and Resiliency Recommendations (links to Azure Advisor) |
 
-> 💡 MIRP must be enabled in **Settings → Features** before it appears in the left nav. For organisations with multiple workspaces, it can be toggled per workspace or enabled across all via the rollup workspace. Note: customers with a **single workspace** cannot toggle MIRP off once enabled.
+> 💡 MIRP is controlled in **Settings → Features** and is **on by default**. In a **Rollup** workspace the toggle starts off — turn it on there to run one MIRP across all child workspaces, or manage it per workspace. Customers with a **single workspace** can't toggle MIRP off. Turning MIRP off removes the feature and its plans from the workspace.
 
-> 💡 Managing contacts within MIRP requires the **Mirp Manager** role. The **Mirp Viewer** role can create and edit solutions and toggle tenants, but cannot add contacts or attest the plan.
+> 💡 Managing contacts within MIRP requires the **Mirp Manager** role. The **Mirp Viewer** role can create and edit solutions and toggle tenants, but cannot add tenants, add contacts, or attest the plan.
 
 ---
 
 ## Incident Readiness
 
-The **Incident Readiness** section (under the Health area) provides guidance on preparing for and responding to the three types of cloud incidents Microsoft categorises:
+The **Incident Readiness** guidance (under the Health area) helps you prepare for and respond to the three types of cloud incidents Microsoft categorises:
 
 | Incident Type | Description |
 |--------------|-------------|
@@ -133,80 +107,103 @@ The **Incident Readiness** section (under the Health area) provides guidance on 
 | **Privacy incidents** | Potential unauthorised use or disclosure of customer data |
 | **Security incidents** | Confirmed breaches resulting in data destruction, loss, or unauthorised access |
 
-The section covers product-specific readiness guidance:
+The guidance is product-specific:
 - **Azure Incident Readiness** — preparation steps and response actions for Azure workloads
 - **Microsoft 365, Dynamics 365 & Power Platform Incident Readiness** — equivalent guidance for those product families
 
-> 💡 Incident Readiness complements MIRP: MIRP maintains your workload inventory and contacts; Incident Readiness provides the product-specific guidance on what to do when an incident occurs.
+> 💡 Incident Readiness complements MIRP: MIRP maintains your workload inventory and contacts; Incident Readiness provides the product-specific guidance on what to do when an incident occurs. See [Incident Readiness](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/health/incident-readiness/incident-readiness).
 
 ---
 
 ## External Resources
 
-The **External Resources** section allows you to manage links and access to external tenants and resources within your Engage Center workspace. This is also where tenant visibility for MIRP (Cloud Solutions) is controlled — tenants can be toggled on or off for each workspace.
+**External Resources** is a per-tenant dashboard that controls which tenant data and capabilities appear in the workspace:
 
-> 💡 If a tenant is missing from the MIRP Cloud Solutions dropdown, check External Resources first. See [aka.ms/ec-externalresources](https://aka.ms/ec-externalresources) for the management guide.
+| Toggle | What It Controls |
+|--------|-----------------|
+| **Support** (Support Request Visibility) | Whether that tenant's support requests — including those from Azure subscriptions trusting the tenant — appear in the workspace. Turning it on counts as consent to show them |
+| **Login** (Login Access) | Whether users from that tenant can sign in to the workspace |
+| **MIRP** | Whether the tenant can be selected when creating MIRP cloud solutions |
+
+You can also add a tenant manually (by Tenant ID) or remove manually added tenants. CSMs and Administrators have full access; CSAMs and Mirp Managers have partial access.
+
+> 💡 If expected cases are missing from Support Requests or Support Insights, or a tenant is missing from the MIRP dropdown, check External Resources first. Newly enabled tenants can take up to an hour to appear in Support Insights. See [aka.ms/ec-externalresources](https://aka.ms/ec-externalresources).
 
 ---
 
 ## Shared Files
 
-The **Shared Files** section provides a centralised location to securely access support-related files shared by your CSAM or Incident Manager. From here you can download files to your local device or delete them (if permitted by your role).
+The **Shared Files** section provides a centralised location to securely access support-related files shared by your CSAM or Incident Manager.
 
 | Action | Who Can Do It |
 |--------|--------------|
-| **View & download files** | Users with the Shared Files role |
-| **Delete files** | Users with the Shared Files role (with delete permission) |
+| **View & download files** | Users with the **Shared Files User** role |
+| **Delete files** | Users with the **Shared Files User** role (deletion is permanent) |
 | **Upload files** | CSAMs and Incident Managers only — not available to customers |
 
-> 💡 If you cannot see Shared Files in the nav, confirm you have been assigned the **Shared Files role** by your Customer Support Manager or Administrator.
+> 💡 If you cannot see Shared Files in the nav, ask your Customer Support Manager, Administrator, or User Access Administrator to assign the **Shared Files User** role. Customers manage their own access — Microsoft doesn't assign it on your behalf.
 
 ---
 
-## Proactive Services
+## Customer Activity
+
+**Customer Activity** gives a centralised view of the services in your Microsoft support agreement and how they're being used. It requires the **Contract Manager** role (or another administrative role with access).
+
+| Element | What It Shows |
+|---------|---------------|
+| **Agreement number** dropdown | Switch between agreements associated with the workspace |
+| **Enterprise-wide packages** | Shared services for the purchasing entity — one tile per service |
+| **Add-on packages** | Purchased add-ons, shown within their parent package |
+| **Service tiles** | Title, description, and usage count (when available) |
+| **Detailed usage views** | Per-service usage detail; format and download options vary by service |
+
+> 💡 What appears can be narrowed per workspace using **Manage Agreements** (single workspace) or **Manage Workspaces** (from the Rollup). A few services that can be turned on may not display yet — Microsoft has flagged this as a known gap.
+
+---
+
+## Proactive Services & On-Demand Assessments
 
 > 💡 **Two distinct types of "services" exist in Engage Center — they are separate:**
-> - **Learning → Scheduled Services**: instructor-led learning sessions and workshops that you can browse and register for directly within the Learning section (see below)
+> - **Learning → Scheduled Services**: instructor-led learning sessions and workshops you can browse in the Learning section and request enrolment for via your CSAM (see below)
 > - **Consulting / advisory proactive services**: advisory sessions, custom engagements, and similar contract-based services are coordinated through your **CSAM**, not via a self-service catalogue
 
-**On-Demand Assessments** have their own dedicated section in the left nav (see above). They use the Engage Center Connector and Azure Log Analytics — initial setup requires an Azure subscription and Log Analytics workspace (~2 hours to configure). Requires the **Assessment User** role.
+**On-Demand Assessments** use the Engage Center Connector and Azure Log Analytics. Initial setup requires an Azure subscription and Log Analytics workspace (~2 hours to configure), plus a collector machine (Azure VM or Azure Arc-enabled server with the Azure Monitor Agent). Collector VMs configured before **September 2024** should be replaced or reimaged. For CSA-led deliveries, the customer grants Microsoft personnel **Log Analytics Reader** access. See [Get started with On-Demand Assessments](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/health/get-started-with-on-demand-assessments).
 
-Advisory sessions, workshops, and custom consulting engagements are drawn from your contract's annual hours pool and scheduled in coordination with your CSAM. Availability and scope depend on your agreement.
+> 💡 The **Assessment User** role grants access to the **Offline Assessment** tab for customers who purchased an Offline package, and only appears after the CSAM turns on the Assessments feature for the workspace.
 
-> 💡 To understand what consulting services are available under your agreement, check entitlement hours in **Customer Activity** and confirm scope with your CSAM.
+Advisory sessions, workshops, and custom consulting engagements are scheduled in coordination with your CSAM. Availability and scope depend on your agreement — check **Customer Activity** and confirm scope with your CSAM.
 
 ---
 
 ## Learning Section
 
-The Learning section brings together discovery, participation, and progress tracking in a single location. It is organised into four main sub-sections:
+The Learning section brings together discovery, participation, and progress tracking in a single location:
 
 | Sub-section | What It Provides |
 |-------------|-----------------|
-| **All Titles** | Browse all available learning and service offerings — on-demand and scheduled; filter by product or keyword |
+| **All Titles** | Browse all available learning and service offerings — on-demand and scheduled; search by keyword, filter by product and service type |
 | **On-Demand Learning** | Self-paced Microsoft Learn modules, learning paths, and interactive hands-on labs; progress is automatically tracked |
-| **Scheduled Services** | Instructor-led sessions and guided workshops; browse descriptions, timing, and formats; navigate to registration for upcoming sessions |
-| **My Learning** | Personalised view of your learning journey — Not Started / In Progress / Completed; shows assigned learning and lets you resume where you left off |
+| **Scheduled Services** | Instructor-led sessions and guided workshops; review descriptions, timing, and formats, then **request enrolment by emailing your CSAM** |
+| **My Learning** | Personalised view — Not Started / In Progress / Completed; shows assigned learning and lets you resume where you left off |
+| **Learning Management** | Assign on-demand learning to individuals or groups, set due dates, and track completion and overdue assignments |
 
-> 💡 **Learning Management** (assigning learning to team members, setting due dates, tracking completion) requires the **Learning Manager** role. General access to learn requires the **Learning User** role.
-
-> ⚠️ **Scheduled Services** (under Learning) = instructor-led learning sessions. This is distinct from consulting/advisory proactive services, which are coordinated through your CSAM. See the Proactive Services section above.
+> 💡 **Learning Management** requires the **Learning Manager** role; general access requires the **Learning User** role. Only on-demand courses from **Microsoft Learn** and the **Microsoft Learning Campus** can be assigned and tracked.
 
 ---
 
 ## Account Team Contacts
 
-Microsoft account team contact details are accessible within **Major Incident Response Plan → Your Account Team**. This section is maintained by Microsoft and always contains current support contact information and portal links.
+Microsoft account team contact details are accessible within **Major Incident Response Plan → Your Account Team**. This section is maintained by Microsoft and contains support contact information and portal links.
 
 | Contact Type | Role | Where to Find |
 |-------------|------|--------------|
 | **CSAM** | Primary relationship manager, success planning | MIRP → Your Account Team; also via email / Teams |
+| **Incident Manager (IM)** | Incident coordination on your cases | System-assigned in Engage Center |
 | **DSE** | Deep technical resource for complex issues | Availability defined per agreement |
 | **CSA** | Cloud architecture advisory | Engaged through proactive services via CSAM |
 | **Premier Field Engineer (PFE)** | Legacy title (some still active) | As per existing Premier contract |
-| **Account Executive / AE** | Commercial relationship | Not directly in Engage Center |
 
-User and role management is handled through **User Management**, not through a People & Contacts section.
+User and role management is handled through **User Management**.
 
 > 💡 If your account team has changed and contact details appear stale, ask your CSAM to update the Your Account Team section in MIRP.
 
@@ -214,71 +211,41 @@ User and role management is handled through **User Management**, not through a P
 
 ## Support Insights
 
-The **Support Insights** section provides data-driven analytics on the health and performance of Microsoft support for your organisation. It displays up to **18 months** of data across all cloud products.
+**Support Insights** gives an interactive view of support activity for the workspace. It only includes cases that are (1) tied to agreements assigned to the workspace, (2) from tenants made visible in External Resources, and (3) assigned to the workspace. Access requires the **Reporting User** role (or **Problem Manager**, which also includes access to all case details).
 
-| Metric / Report | What It Shows |
-|----------------|--------------|
-| **Total case count** | Total number of support requests |
-| **Open case count** | Number of currently active support requests |
-| **Average aging (days)** | Average age of open support requests |
-| **IR Met %** | Percentage of cases where the initial response SLA was met |
-| **Total CritSits** | Number of cases with a maximum severity of Severity A |
-| **Crit Elapsed Minutes** | Minutes reactive support requests spent in Severity A status while open |
-| **Avg CPT (hours)** | Average CPT (hours) trend for the past 18 months |
-| **Case Volume Trend** | Support case volume trend by month (Open, Incoming, Resolved) |
-| **Open cases by severity & age** | Age of open cases broken down by severity |
-| **Open case by status** | All open support requests by current status |
-| **Case count by Azure product** | Total number of cases by Azure product area |
-| **Overall case distribution** | Technical vs. billing case split |
+| Area | What It Shows |
+|------|--------------|
+| **Global filters** | State, Date range, Cloud, Product / product family, Severity, Status, Tenant |
+| **Detailed statistics** | Total cases, Open cases, Average aging, Critical cases, Critical case time, Initial response performance |
+| **Support case summary charts** | Cases by current / initial / max severity, Initial response (IR) met, Case count by product and by product family, Overall case distribution, Cases opened by country/region |
+| **Support Requests table** | Case-level drill-down to spot aging or inactive cases |
+| **Ask & Explore** (AI) | Natural-language questions — "what needs attention today?", "which cases are aging?", QBR prep, case hygiene reviews |
+| **Custom Reports** (AI) | Describe a report in plain language or start from a template (executive summary, SLA tracking, CritSit monitoring, product health) and refine it conversationally |
 
-> 💡 Export to CSV or PDF is available for most reports — useful for internal reporting or QBR preparation. Access requires the **Reporting User** role (or **Problem Manager** role, which also includes case detail access).
+> 💡 Export is available to customer users. Validate AI-generated insights (data source, refresh time) before sharing them externally.
 
 ---
 
-## Search
+## User Management & Reactive Services
 
-The global search bar supports:
+**User Management** is where Administrators and **User Access Administrators** add, edit, and remove users and Microsoft Entra groups and assign roles. Invited users stay **Pending** until their first sign-in.
 
-- **Case numbers** — direct lookup (`SR123456789`)
-- **Keywords** — searches across case titles, service names, and learning content
-- **Contact names** — find team members or Microsoft contacts
-- **Knowledge Base** — Microsoft support KB articles relevant to your search
+**Reactive Services** (optional) restricts which reactive support services specific users or groups can use to open cases or create Access IDs. It only appears after an administrator turns on **Settings → Features → Support (Granular Reactive Services)**, which is off by default. Saving a selection replaces the previous one, and Microsoft recommends leaving it off unless your agreement has multiple reactive services that must be split between teams.
 
-### Search Tips
-
-| Tip | Example |
-|-----|---------|
-| Use case reference numbers for direct lookup | `SR123456789` or `119123456789` |
-| Quote phrases for exact match | `"Azure Kubernetes"` |
-| Filter by section | Use the filter pill after searching |
+> 💡 See [Engage Center roles and permissions](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/) for the full role list and [Reactive Services](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/user-management/services).
 
 ---
 
-## Notifications & Alerts
+## Settings, Profile & Newsletter
 
-Configure notifications in **Settings → Notifications**:
+| Where | What You Can Do |
+|-------|----------------|
+| **Settings → Features** | Workspace administrators toggle **MIRP** (on by default), **Newsletter** (on by default), and **Support (Granular Reactive Services)** (off by default) |
+| **Settings → Newsletter settings** | Administrators enable or disable distribution of individual newsletters in the workspace |
+| **My Profile** | Set and verify the **preferred email** used for newsletters (delivery is paused until verified); subscribe to Engage Center updates |
+| **Newsletter** | Browse newsletters and Microsoft security briefings, filter by language or topic, and subscribe |
 
-| Notification Type | Channel | Configurable? |
-|------------------|---------|--------------|
-| Case status update | Email + in-portal | Yes |
-| New case comment | Email + in-portal | Yes |
-| Scheduled service reminder | Email + in-portal | Yes |
-| Contract expiry warning | Email | Yes |
-| Service health alert | In-portal | Yes (linked to Azure subscription) |
-
----
-
-## Account Settings
-
-Navigate to **Settings** (gear icon) or your **profile avatar** → Settings:
-
-| Setting | Detail |
-|---------|--------|
-| **Notification preferences** | Control per-event email/in-portal alerts |
-| **Preferred language** | Portal UI language |
-| **Time zone** | Affects case and service timestamps |
-| **MFA / security** | Managed via Entra ID — redirects to AAD portal |
-| **Organisation profile** | Managed by IT Admin — read-only for standard users |
+> 💡 See [Features](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/settings/features-page) and [Manage and subscribe to newsletters](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/resources/newsletter-subscription-management).
 
 ---
 
@@ -287,25 +254,16 @@ Navigate to **Settings** (gear icon) or your **profile avatar** → Settings:
 | Tip | How |
 |-----|-----|
 | **Bookmark frequently used sections** | Browser bookmarks for Support, Support Insights, Customer Activity, and MIRP |
-| **Use search for fast case lookup** | Faster than navigating to Support → All Requests |
-| **Pin the home dashboard widgets** | Customise order and which widgets are visible |
-| **Export Support Insights before QBRs** | Pull 90-day case reports from Support Insights |
-| **Check MIRP → Your Account Team after account team changes** | Always reflects current CSAM and Microsoft contact details |
-| **Customer Activity as a conversation starter** | Use it with customers to show entitlement consumption, hours remaining, and purchased services |
+| **Start with External Resources when data looks missing** | Tenant visibility drives what appears in Support Requests and Support Insights |
+| **Use Custom Reports before QBRs** | Start from the executive-summary or SLA template, then refine for the audience |
+| **Check MIRP → Your Account Team after account team changes** | Reflects current CSAM and Microsoft contact details |
+| **Customer Activity as a conversation starter** | Walk through packages, services, and usage counts with the customer |
 
 ---
 
-## Known Limitations (as of 2025)
+## During the Transition
 
-| Limitation | Notes |
-|-----------|-------|
-| **Not all Services Hub features migrated** | Some proactive service types still require Services Hub |
-| **Bulk case management limited** | Mass-update / bulk close not yet available |
-| **API access** | No public API yet for programmatic case creation (unlike Azure support API) |
-| **Mobile app** | No dedicated mobile app; responsive web only |
-| **Legacy case history** | Cases from before migration may have limited data in Engage Center |
-
-> These limitations are expected to be resolved as the platform matures. Check the [Microsoft roadmap](https://learn.microsoft.com/en-us/services-hub/) for updates.
+Some features may still live in Services Hub until your workspace completes its rollout. See [05 — Services Hub vs Engage Center](/engage-center-notes/05-services-hub-comparison/) and Microsoft's [What to expect as Engage Center rolls out](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/what-to-expect).
 
 ---
 

@@ -23,9 +23,9 @@ mermaid: true
 
 ## Overview
 
-The **Support** section of Engage Center is the primary interface for creating and managing break-fix support cases (also called **Support Requests / SRs**). Cases raised here are routed into Microsoft's internal ICM system and assigned to the appropriate support team.
+The **Support** section of Engage Center is the primary interface for creating and managing break-fix support cases (also called **Support Requests**). It has two parts: **Help + Support**, where the Support AI Assistant guides self-help and case creation, and the **Support Requests** list, where you track and work on cases.
 
-> 💡 Engage Center support cases are the same underlying cases you would have raised through Services Hub or the Azure Portal — the portal is a different front-end to the same support organisation.
+> 💡 Engage Center can also show support requests opened in Microsoft's cloud portals (for example the Azure portal), as long as the tenant's **Support Request Visibility** is turned on in **External Resources**.
 
 ---
 
@@ -44,86 +44,74 @@ Microsoft uses severity to set the initial response target. The Unified Enterpri
 
 ---
 
-## Case Lifecycle
+## Case States
 
-```mermaid
-%%{init: {"theme":"dark"}}%%
-stateDiagram-v2
-    [*] --> New : Customer creates case
-    New --> Assigned : Routed to support engineer
-    Assigned --> InProgress : Engineer begins investigation
-    InProgress --> WaitingForCustomer : Engineer requests info / action
-    WaitingForCustomer --> InProgress : Customer responds
-    InProgress --> Resolved : Solution provided
-    Resolved --> Closed : Customer confirms resolution (or auto-close after 5 days)
-    Resolved --> InProgress : Customer re-opens (solution not accepted)
-    Closed --> [*]
-```
+The Support Requests list tracks each case's **State** — for example **Active** or **Closed** — alongside its severity, product, product family, primary contact, and created date.
 
-### Case States
+| Combination | What It Usually Means |
+|-------------|----------------------|
+| **High severity + Active** | Needs immediate attention |
+| **High severity + Closed** | Recently resolved critical issue — review the communications history |
+| **Low severity + Active** | Lower priority — monitor |
+| **Older Active cases** | May be stalled — follow up |
 
-| State | Meaning |
-|-------|---------|
-| **New** | Case submitted; not yet assigned to an engineer |
-| **Assigned** | Engineer allocated; initial review in progress |
-| **In Progress** | Active investigation underway |
-| **Waiting for Customer** | Microsoft is waiting for information, logs, or confirmation from you |
-| **Resolved** | Microsoft has provided a solution or workaround |
-| **Closed** | Case concluded — either confirmed resolved or auto-closed |
-
-> ⚠️ Cases in **Waiting for Customer** status **do not count against Microsoft's SLA clock**. Respond promptly to avoid delays.
+> 💡 Use the **Communications** tab to see the conversation history with Microsoft support, and reply promptly when the engineer asks for information.
 
 ---
 
 ## Creating a New Support Request
 
-### Step-by-Step
+### Step-by-Step (Support AI Assistant)
 
 ```mermaid
 %%{init: {"theme":"dark"}}%%
 flowchart TD
     S1["1️⃣ Support → Help + Support"]
-    S2["2️⃣ Select product / service area\n(Azure, M365, Dynamics, Windows Server, etc.)"]
-    S3["3️⃣ Describe the problem\n(title + description)"]
-    S4["4️⃣ Select severity\n(A / B / C)"]
-    S5["5️⃣ Add contact details\n& preferred contact method"]
-    S6["6️⃣ Attach files / logs\n(optional but recommended)"]
-    S7["7️⃣ Review & submit"]
-    S8["Case number assigned\n(SR prefix)"]
+    S2["2️⃣ Select product\n(or Find another product)"]
+    S3["3️⃣ Select problem type\n& sub-type"]
+    S4["4️⃣ Review AI guidance\n& answer scoping questions"]
+    S5["5️⃣ Create support request\n(title + description pre-filled)"]
+    S6["6️⃣ Attach files / evidence"]
+    S7["7️⃣ Select support plan\n→ severity → phone or email"]
+    S8["8️⃣ Contact info\n+ additional contacts"]
+    S9["Submit Case\n(case number returned as a link)"]
 
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
+    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9
 ```
 
-> 💡 Two case creation experiences are available in Engage Center:
-> - **Enhanced experience** — self-help form with product/problem selectors and recommended KB articles before submission
-> - **Support AI Assistant** — AI-guided troubleshooting flow; creates a case if self-help does not resolve the issue
+> 💡 After you pick a product, the assistant asks three **scoping questions**, and your answers are shared with the engineering team:
+> - What problem are you encountering, including any error message or code?
+> - When did you first notice the issue?
+> - What recently changed in your environment, if anything?
 >
-> To identify which experience your workspace has: navigate to **Support → Help + Support** and check whether you see a form or an AI assistant prompt. Only users with the **Support User** role can create support cases.
+> **Create support request** is shown prominently at the top of the page once you've answered them. If self-help resolves the issue, type something like "Issue resolved" and select **I'm done**. Use **Restart conversation** for a new topic, and **Phone support** to see regional phone numbers. Only users with the **Support User** role can create support cases, and cases can't be created from a **Rollup** workspace.
 
 ### Tips for a Strong Case Description
 
 | Element | Best Practice |
 |---------|--------------|
-| **Title** | Be specific: "Azure VM cannot RDP after NSG change" not "VM issue" |
+| **Title** | Be specific: "Azure VM cannot RDP after NSG change" not "VM issue" — edit the pre-filled title if needed |
 | **Problem statement** | What is happening vs what is expected |
 | **Impact** | How many users/systems affected, business consequence |
 | **Steps to reproduce** | Numbered steps that reliably trigger the issue |
-| **Recent changes** | Any deployments, config changes, updates in the 48h before the issue |
+| **Recent changes** | Any deployments, config changes, updates before the issue started |
 | **Error messages** | Exact text + any error codes |
-| **Resource IDs** | Azure subscription ID, resource group, resource name |
-| **Logs** | Attach relevant logs upfront — speeds diagnosis significantly |
+| **Resource identifiers** | Tenant ID, subscription ID, resource group, resource name — whatever applies to the product |
+| **Logs** | Attach relevant logs upfront |
 
 ---
 
-## Attachments & Collaboration
+## Working a Case
 
 | Feature | Detail |
 |---------|--------|
-| **File attachments** | Upload logs, screenshots, config exports (max file size varies by type) |
-| **Case thread** | Threaded conversation visible to all watchers |
-| **Watchers** | Add colleagues to receive updates without them owning the case |
-| **Internal notes** | Not available to end users — engineers use this for internal tracking |
-| **Screen sharing** | Engineers may request a screen share session through Teams or Remote Desktop |
+| **Overview** | Full case details |
+| **Communications** | Conversation history with Microsoft support |
+| **Attachments** | View files shared for troubleshooting; upload files requested by Microsoft support |
+| **Sharing** | See who has access and share the request with colleagues |
+| **Export** | Export the Support Requests list — reflects your current filters and the active workspace |
+
+> 💡 You see cases you created, cases shared with you, and cases tied to your signed-in identity. Roles such as **Problem Manager** add visibility of all support requests in the workspace. In a **Rollup** workspace, **Case Assignment** routes unassigned cases to the right child workspace.
 
 ---
 
@@ -136,23 +124,22 @@ If resolution is unsatisfactory or urgency has increased:
 ```mermaid
 %%{init: {"theme":"dark"}}%%
 flowchart TD
-    CASE["Open Case\n(Severity B / C)"]
-    RAISE["Re-assess severity\nUpdate case to Severity A"]
-    MGR["Request manager escalation\nin case thread"]
+    CASE["Open Case"]
+    RAISE["Re-assess business impact\n(severity)"]
+    NOTE["Document impact\nin the case communications"]
     CSAM["Contact your CSAM\ndirectly (phone / Teams)"]
-    EXEC["CSAM escalates to\nMicrosoft Account Executive\nor Engineering"]
+    EXEC["CSAM coordinates further\nescalation with Microsoft"]
 
-    CASE --> RAISE --> MGR --> CSAM --> EXEC
+    CASE --> RAISE --> NOTE --> CSAM --> EXEC
 ```
 
 | Escalation Option | When to Use |
 |------------------|-------------|
-| **Update severity** | Impact has increased since case was filed |
-| **Manager escalation request** | Engineer responsiveness inadequate for the business impact |
-| **Contact CSAM** | Most effective for Severity A — your CSAM can directly accelerate |
-| **Executive escalation** | Available subject to agreement; CSAM coordinates with Account Executive or Engineering |
+| **Re-assess severity** | Business impact has changed since the case was filed |
+| **Document impact in the case** | Keep the business impact clear and current for the engineer |
+| **Contact CSAM** | Most effective for critical cases — your CSAM coordinates escalation |
 
-> 💡 Always **update the case notes** when you escalate, documenting the business impact clearly. This creates a paper trail and helps the support engineer's manager prioritise.
+> 💡 Always **document the business impact** in the case when you escalate. This creates a clear record and helps Microsoft prioritise.
 
 ---
 
@@ -160,39 +147,18 @@ flowchart TD
 
 | Practice | Rationale |
 |----------|-----------|
-| **Respond within 24h to "Waiting for Customer"** | Avoids unintended auto-close and keeps the SLA clock fair |
-| **Use watchers liberally** | Keeps managers and architects informed without creating duplicate cases |
-| **Include subscription/tenant ID at case creation** | Prevents back-and-forth on basic account identification |
-| **One issue per case** | Mixed-issue cases are harder to route and track; open separate SRs |
-| **Reference prior cases** | If issue recurs, mention previous SR number — helps pattern recognition |
-| **Close cases yourself** | Don't wait for auto-close; confirm resolution to keep analytics clean |
+| **Respond promptly to requests for information** | Keeps the investigation moving |
+| **Share the request with stakeholders** | Keeps managers and architects informed without creating duplicate cases |
+| **Include tenant / subscription / resource IDs at creation** | Prevents back-and-forth on basic identification |
+| **One issue per case** | Mixed-issue cases are harder to route and track; open separate requests |
+| **Reference prior cases** | If an issue recurs, mention the previous case number |
+| **Check External Resources if a case is missing** | Cases only appear for tenants with Support Request Visibility turned on |
 
 ---
 
 ## Support for Specific Products
 
-Different Microsoft product areas have slightly different case routing:
-
-| Product Area | Routing Notes |
-|-------------|--------------|
-| **Azure (IaaS/PaaS)** | Routed by resource type; subscription ID required |
-| **Microsoft 365 / Exchange / Teams** | Tenant ID required; often handled by M365 support team |
-| **Dynamics 365** | Separate support track; environment ID required |
-| **Windows Server / SQL Server on-premises** | Routes to Premier/Unified on-premises support team |
-| **Security (Defender, Sentinel)** | May route to MSRC for vulnerability reports; otherwise standard |
-| **Azure DevOps** | Organisation URL required |
-
----
-
-## Case Numbers & Reference Formats
-
-| Format | Product Area |
-|--------|-------------|
-| `SR123456789` | Standard Unified Support case reference |
-| `119123456789` | Older Premier/ICM format (still common in email threads) |
-| `CRM:xxxxxxxxx` | Internal Microsoft CRM reference (seen in automated emails) |
-
-> 💡 Always reference the `SR` number when contacting your CSAM or following up by email — it is the most reliable cross-system identifier.
+Routing is driven by the **product and problem type** you select in the Support AI Assistant, so choose the most specific product available (use **Find another product** if it isn't listed). Include the identifiers that apply to the product — for example the Azure subscription and resource IDs, the Microsoft 365 tenant ID, or the Dynamics 365 / Power Platform environment.
 
 ---
 
