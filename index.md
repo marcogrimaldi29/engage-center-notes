@@ -77,7 +77,7 @@ flowchart TD
 
 <div style="border:1px solid #0090b0; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">📄 03 — Unified & Premier Contracts</h3>
-<p>Microsoft Unified (Unified Enterprise Plan) vs legacy Premier. Value Acceleration &amp; Mission Critical services, entitlements, and what to look for as a CSA.</p>
+<p>Microsoft Unified (Unified Enterprise Plan) vs legacy Premier. Base plan, optional add-ons (Mission Critical, Value Acceleration, Unified Assured), response targets, and what to look for as a CSA.</p>
 <a href="/engage-center-notes/03-unified-premier-contracts/" class="btn btn-outline fs-5">Read →</a>
 </div>
 

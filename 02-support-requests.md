@@ -31,15 +31,16 @@ The **Support** section of Engage Center is the primary interface for creating a
 
 ## Severity Levels
 
-Microsoft uses severity (also called **priority** in some product areas) to determine initial response time:
+Microsoft uses severity to set the initial response target. The Unified Enterprise targets published on the [Unified Enterprise plan details](https://www.microsoft.com/en-us/microsoft-unified/plan-details) page are:
 
-| Severity | Business Impact | Initial Response |
+| Severity | Business Impact | Initial Response (Unified Enterprise) |
 |----------|----------------|-----------------|
-| **Severity A / Critical** | Complete business outage or critical production system down; no workaround | **≤ 1 hour** (24/7) |
-| **Severity B / High** | Significant feature loss, major performance degradation; partial workaround possible | **≤ 2 hours** (24/7) |
-| **Severity C / General** | Minor impact, question, or general guidance request | **≤ 4 business hours** |
+| **Critical — Severity 1** | Mission-critical business system or production solution completely down; business at risk | **15 min for Azure / 1 hour for other products** (24x7) |
+| **Severity A** | Critical business impact; significant loss or degradation of services | **1 hour** (24x7) |
+| **Severity B** | Moderate business impact; work can continue in an impaired manner | **2 hours** (business hours by default; **24x7 only if requested** when the case is submitted) |
+| **Severity C** | Minimum business impact; minor impediment of service | **4 hours** (business hours only) |
 
-> ⚠️ These are **initial response** targets, not resolution time targets. Response times apply to Microsoft Unified and Legacy Premier. See [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) for entitlement context.
+> ⚠️ These are **initial response** targets, not resolution time targets. Severity 1 and Severity A (and Severity B when 24x7 is selected) expect the customer to commit to continuous 24x7 engagement — otherwise Microsoft may lower the severity. Legacy Premier targets are in the [Response Target Reference](#response-target-reference) below. See [03 — Unified & Premier Contracts](/engage-center-notes/03-unified-premier-contracts/) for entitlement context.
 
 ---
 
@@ -197,12 +198,12 @@ Different Microsoft product areas have slightly different case routing:
 
 ## Response Target Reference
 
-| Contract | Severity A | Severity B | Severity C |
-|----------|:----------:|:----------:|:----------:|
-| **Microsoft Unified** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
-| **Legacy Premier** | ≤ 1 hour (24/7) | ≤ 2 hours (24/7) | ≤ 4 business hours |
+| Contract | Severity 1 (Critical) | Severity A | Severity B | Severity C |
+|----------|:----------:|:----------:|:----------:|:----------:|
+| **Microsoft Unified (Enterprise)** | 15 min Azure / 1 h other (24x7) | 1 h (24x7) | 2 h (24x7 on request) | 4 h (business hours) |
+| **Legacy Premier** | — | < 1 h (24x7) | < 2 h (24x7) | < 4 h |
 
-> ⚠️ These are **initial response** targets, not resolution time targets. Resolution time varies by complexity and is not contractually guaranteed.
+> ⚠️ These are **initial response** targets, not resolution time targets. Resolution time varies by complexity and is not contractually guaranteed. Sources: [Unified Enterprise plan details](https://www.microsoft.com/en-us/microsoft-unified/plan-details) (Unified) and Microsoft's [Power BI support options](https://learn.microsoft.com/en-us/power-bi/support/service-support-options) page (Premier).
 
 ---
 
