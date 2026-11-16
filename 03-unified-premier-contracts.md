@@ -108,7 +108,7 @@ flowchart LR
     CONTRACT --> CUSTOM
 ```
 
-> 💡 **Digital MIRP** is a self-service portal tool built into Engage Center — it is not consumed from the proactive hours pool. See [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) for details.
+> 💡 **Digital MIRP** is a self-service portal tool built into Engage Center — it is not a proactive service drawn from your agreement. See [04 — Digital MIRP](/engage-center-notes/04-digital-mirp/) for details.
 
 | Service | Included in Microsoft Unified | Notes |
 |---------|:-----------------------------:|-------|

@@ -19,7 +19,7 @@ mermaid: true
 ---
 
 > Maintained by **[Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)** — Cloud Solution Architect.
-> Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/)**.
+> Based on the **[official Microsoft Engage Center documentation](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/)**.
 > Find more notes and content at **[🏠 marcogrimaldi29.com](https://marcogrimaldi29.com)**.
 > *Not affiliated with or endorsed by Microsoft. Always verify against the latest documentation.*
 
@@ -27,11 +27,11 @@ mermaid: true
 
 ## 📌 What Is Engage Center?
 
-**Engage Center** is Microsoft's next-generation customer experience portal — the unified hub for customers with **Unified Support** (formerly Premier) contracts. It consolidates support case management, proactive services, account information, and learning resources into a single, modernised interface.
+**Engage Center** is the Microsoft digital experience replacing Services Hub for customers with **Microsoft Unified** support agreements (the successor to Premier). It consolidates support case management, Support Insights, agreement usage, incident readiness, and learning into a single interface.
 
 > **Key URL:** [engagecenter.microsoft.com](https://engagecenter.microsoft.com/)
 
-Engage Center is rolling out progressively across Microsoft's customer base and is replacing/supplementing **Services Hub** (`serviceshub.microsoft.com`). New capabilities are being added continuously.
+Engage Center is rolling out progressively across Microsoft's customer base and is replacing **Services Hub** (`serviceshub.microsoft.com`). New capabilities are being added continuously.
 
 ---
 
@@ -41,8 +41,10 @@ Engage Center is rolling out progressively across Microsoft's customer base and 
 %%{init: {"theme":"dark","themeVariables":{"primaryTextColor":"#ffffff","secondaryTextColor":"#e8eaed","nodeBorder":"#0078d4","mainBkg":"#0d2136"}}}%%
 flowchart TD
     EC["🌐 Engage Center\nengagecenter.microsoft.com"]
-    EC --> SR["🎫 Support Requests\n(Cases & SRs)"]
-    EC --> PA["👤 User Management\n& MIRP Contacts"]
+    EC --> SR["🎫 Support Requests\n(AI Assistant & cases)"]
+    EC --> CA["📄 Customer Activity\n(agreement usage)"]
+    EC --> OD["🔍 On-Demand\nAssessments"]
+    EC --> PA["👤 User Management\n& Workspaces"]
     EC --> PS["🛡️ MIRP & Incident\nReadiness"]
     EC --> LR["🎓 Learning &\nResources"]
     EC --> AN["📊 Support Insights\n(Analytics)"]
@@ -65,13 +67,13 @@ flowchart TD
 
 <div style="border:1px solid #00b4d8; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🧭 01 — Navigation & Features</h3>
-<p>UI walkthrough, key sections, search, notifications, account settings, and productivity tips.</p>
+<p>Left-nav sections, workspaces, Support Insights, roles, settings, newsletter, and productivity tips.</p>
 <a href="/engage-center-notes/01-navigation-features/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
 <div style="border:1px solid #48cae4; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">🎫 02 — Support Requests</h3>
-<p>Creating, managing, and escalating support cases. Severity levels, response targets, and escalation paths.</p>
+<p>Creating cases with the Support AI Assistant, managing and escalating them. Severity levels and response targets.</p>
 <a href="/engage-center-notes/02-support-requests/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
@@ -95,7 +97,7 @@ flowchart TD
 
 <div style="border:1px solid #90e0ef; border-radius:8px; padding:1rem; background:#0d1b2a;">
 <h3 style="margin-top:0;">⚡ 06 — Quick Reference Cheatsheet</h3>
-<p>Key URLs, SLA tables, contract tier comparison at a glance, escalation paths, and CSA field tips.</p>
+<p>Key URLs, severity table, Unified base plan and add-ons at a glance, On-Demand Assessments, escalation paths, and CSA field tips.</p>
 <a href="/engage-center-notes/06-cheatsheet/" class="btn btn-outline fs-5">Read →</a>
 </div>
 
@@ -127,8 +129,8 @@ flowchart LR
 |----------|------|
 | 🌐 Engage Center Portal | [engagecenter.microsoft.com](https://engagecenter.microsoft.com/) |
 | 🏛️ Services Hub (legacy) | [serviceshub.microsoft.com](https://serviceshub.microsoft.com) |
-| 📘 Microsoft Unified Support | [Microsoft Unified Support](https://www.microsoft.com/en-us/unifiedsupport) |
-| 🎓 Microsoft Learn — Support | [Microsoft Support Documentation](https://learn.microsoft.com/en-us/services-hub/) |
+| 📘 Microsoft Unified | [Microsoft Unified](https://www.microsoft.com/en-us/microsoft-unified) |
+| 🎓 Engage Center documentation | [Microsoft Learn — Engage Center](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/) |
 | 📞 Microsoft Support | [support.microsoft.com](https://support.microsoft.com) |
 
 ---

@@ -81,7 +81,7 @@ mermaid: false
 | Designated Support Engineer | **DSE** | Deep technical resource for complex issues |
 | Cloud Solutions Architect | **CSA** | Architecture advisory, proactive services delivery |
 | Technical Account Manager | **TAM** | Legacy Premier title, equivalent to CSAM |
-| Premier Field Engineer | **PFE** | Legacy Premier title, equivalent to DSE |
+| Premier Field Engineer | **PFE** | Legacy Premier title; PFE engagements map to proactive services in Unified |
 | Incident Manager | **IM** | Microsoft system role for incident coordination; can upload Shared Files |
 | Microsoft Incident Response (formerly DART) | — | Security compromise response (separate engagement) |
 
@@ -171,7 +171,7 @@ Selected from the [official On-Demand Assessment catalogue](https://learn.micros
 
 | Situation | Tip |
 |-----------|-----|
-| First call with a new Unified customer | Start in **Customer Activity** in Engage Center to understand their entitlements and hours pool |
+| First call with a new Unified customer | Start in **Customer Activity** in Engage Center to understand their packages, services, and usage |
 | Customer says "our cases take too long" | Check the severity chosen (Sev B is business hours unless 24x7 was requested) and the **Initial response performance** statistic in Support Insights |
 | Customer wants to know what proactive services they can use | Check **Customer Activity** for entitlement hours, then ask the CSAM what services are available under the agreement |
 | Customer asks about Services Hub retirement | "No firm date yet. Both portals work. Default to Engage Center, Services Hub still there if needed." |
