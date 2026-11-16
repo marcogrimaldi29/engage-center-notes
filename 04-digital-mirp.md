@@ -25,7 +25,7 @@ mermaid: true
 
 The **Major Incident Response Plan (MIRP)** is a **digital tool built into Microsoft Engage Center** that helps organisations and Microsoft maintain shared visibility over business-critical cloud solutions, key stakeholder contacts, and incident response procedures — so that when a major service incident occurs, the right people are reached and the right steps are followed quickly.
 
-> MIRP is *not* a reactive incident response service. If you have an active security incident, open a **Severity A support case** or engage the **Microsoft Detection and Response Team (DART)**.
+> MIRP is *not* a reactive incident response service. If you have an active security incident, open a **Severity A support case** or engage **Microsoft Incident Response** (formerly DART).
 
 ### Why MIRP Matters
 
@@ -113,7 +113,9 @@ Once the Cloud Solutions section is accurate and complete, select **Confirm** to
 
 ### Printing / Exporting
 
-The Solutions list can be printed or exported as a PDF directly from the portal using the **Print** button.
+The Solutions list can be printed or exported as a PDF directly from the portal using the **Print** button. A **Give Feedback** button on the same page sends feedback on the MIRP experience to Microsoft.
+
+> 💡 In a **Rollup** workspace, Cloud Solutions shows workloads from **all agreements** across the child workspaces.
 
 ---
 
@@ -159,25 +161,26 @@ The **Azure Health** section is available to Azure customers and provides two su
 
 | Requirement | Detail |
 |-------------|--------|
-| **Enable in Settings** | MIRP must be enabled via **Settings → Features** before it appears in the left nav; can be toggled per workspace or across all workspaces via the rollup workspace; single-workspace customers cannot toggle it off once enabled |
+| **Settings → Features** | MIRP is **on by default** for a workspace. In a **Rollup** workspace it starts off — turn it on there to run one MIRP across all child workspaces, or toggle it per workspace. Single-workspace customers can't toggle it off. Turning it off removes MIRP and its plans from the workspace |
 | **Mirp Manager role** | Required to add contacts, attest solutions, add/enable tenants, and have full MIRP oversight |
 | **Mirp Viewer role** | Can create and edit solutions and toggle tenants on/off; cannot add tenants, add contacts, or attest |
-| **Contract** | Requires an active Microsoft customer agreement with appropriate entitlements — confirm with your CSAM |
+| **Contract** | Requires an active Microsoft customer agreement — confirm with your CSAM |
+| **Tenants** | M365 / D365 / Power Platform solutions can only use tenants whose **MIRP** toggle is on in **External Resources** |
 | **Azure workload visibility** | Workloads must be onboarded via the Proactive Resiliency Program |
 
 ---
 
-## MIRP vs DART
+## MIRP vs Microsoft Incident Response
 
-| Dimension | MIRP | DART |
+| Dimension | MIRP | Microsoft Incident Response (formerly DART) |
 |-----------|------|------|
 | **Type** | Proactive planning & preparedness | Reactive incident response |
 | **When** | Before an incident — keep it current | During or immediately after an incident |
 | **Nature** | Self-service portal tool in Engage Center | Separate Microsoft IR specialist engagement |
-| **Who acts** | Customer administrators + Microsoft account team | DART (Microsoft Detection and Response Team) |
+| **Who acts** | Customer administrators + Microsoft account team | Microsoft Incident Response specialists |
 | **Output** | Centralised workload/contact inventory + response guidelines | Incident investigation, containment, remediation |
 
-> 💡 MIRP and DART are complementary. A well-maintained MIRP means that if DART is ever needed, Microsoft already has your critical workloads and the right contacts — response time is faster.
+> 💡 MIRP and Microsoft Incident Response are complementary. MIRP prepares you for major **service** incidents (who to call, which workloads matter, what to do); Microsoft Incident Response handles **security compromises**. Microsoft now markets the service as *Microsoft Defender Experts Cybersecurity Incident Response*.
 
 ---
 
@@ -190,7 +193,7 @@ The **Azure Health** section is available to Azure customers and provides two su
 | **Azure workload gaps → CSAM** | If the customer's critical Azure workloads aren't showing up, engage the CSAM to resolve the Proactive Resiliency Program onboarding |
 | **Walk through Response Guidelines with the customer** | Many customers haven't read them — a 30-minute walkthrough of the Before/During/After guidance is high value |
 | **Use MIRP contact inventory as a DRI conversation** | Who's listed as the technical contact for each workload? Is it the right person? This is a good governance touch-point |
-| **MIRP before DART, not instead of DART** | For high-risk customers (financial services, healthcare, critical infrastructure), recommend layering a DART retainer on top of a well-maintained MIRP |
+| **MIRP is not a security IR plan** | For high-risk customers (financial services, healthcare, critical infrastructure), pair a well-maintained MIRP with Microsoft Incident Response's proactive and reactive services |
 
 ---
 
@@ -201,7 +204,8 @@ The **Azure Health** section is available to Azure customers and provides two su
 | Official MIRP documentation | [MIRP in Microsoft Engage Center](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/customer-health/mirp) |
 | Engage Center Roles | [Roles & Access](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/roles/) |
 | External Resources (tenant management) | [aka.ms/ec-externalresources](https://aka.ms/ec-externalresources) |
-| DART | [Microsoft Detection and Response Team](https://www.microsoft.com/en-us/security/blog/2020/06/10/dart-the-microsoft-cybersecurity-team-we-hope-you-never-meet/) |
+| Microsoft Incident Response (formerly DART) | [Microsoft Incident Response](https://www.microsoft.com/en-us/security/business/microsoft-incident-response) |
+| Incident Readiness guidance | [Incident Readiness with Engage Center](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/health/incident-readiness/incident-readiness) |
 | Azure Advisor | [Azure Advisor](https://learn.microsoft.com/en-us/azure/advisor/) |
 
 ---

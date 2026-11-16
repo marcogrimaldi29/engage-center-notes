@@ -23,9 +23,9 @@ mermaid: true
 
 ## Overview
 
-**Services Hub** (`serviceshub.microsoft.com`) was the primary customer portal for Microsoft Unified (and Premier) support customers from ~2018 onward. **Engage Center** (`engagecenter.microsoft.com`) is its successor — built on Azure — currently rolling out across Microsoft's customer base.
+**Services Hub** (`serviceshub.microsoft.com`) has been the customer portal for Microsoft Unified (and Premier) support customers. **Engage Center** (`engagecenter.microsoft.com`) is the digital experience replacing it — built on Azure and rolling out gradually across Microsoft's customer base.
 
-The two portals **run in parallel** during the transition period. The outcome is defined: **Engage Center becomes the single experience for daily support work**, with Services Hub eventually redirecting to it. Understanding what lives where during the transition is essential for CSAs advising customers.
+The two portals **run in parallel** during the transition period. The outcome is defined: **Engage Center becomes the single experience for daily support work**, and Services Hub redirects to it. Understanding what lives where during the transition is essential for CSAs advising customers.
 
 ---
 
@@ -33,22 +33,14 @@ The two portals **run in parallel** during the transition period. The outcome is
 
 ```mermaid
 %%{init: {"theme":"dark"}}%%
-timeline
-    title Services Hub → Engage Center Migration
-    2018 : Services Hub launched
-         : Replaces Premier Online
-    2021 : Unified Support becomes primary contract model
-         : Services Hub as primary portal
-    2023 : Engage Center pilot / early access
-    2024 : Engage Center general availability (rolling)
-         : Parallel operation begins
-    2025 : Features transitioning gradually per customer
-         : Services Hub maintained during transition
-    TBD  : All customers fully on Engage Center
-         : Services Hub redirects to Engage Center
+flowchart LR
+    A["🏛️ Services Hub\n(current portal)"]
+    B["🔄 Parallel operation\nfeatures move per customer\nin a defined order"]
+    C["🌐 Engage Center only\nServices Hub no longer accessed"]
+    A --> B --> C
 ```
 
-> ⚠️ Microsoft has not published a firm Services Hub retirement date. The docs state there is "a defined point where all customers move fully to Engage Center, and Services Hub is no longer accessed" — but no year is given. Confirm the current status with your CSAM.
+> ⚠️ Microsoft has not published a Services Hub retirement date (as of November 2026). The docs state there is "a defined point where all customers move fully to Engage Center" — but no date is given. Confirm the current status with your CSAM.
 
 ---
 
@@ -61,79 +53,79 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 | **1 — Support foundations** | Case Create, Support Management |
 | **2 — Everyday support context** | External Resources, Digital MIRP, Learning, Support Insights |
 | **3 — Collaboration & artifacts** | Shared Files |
-| **4 — Administration & structure** | User Management, Space Management |
+| **4 — Administration & structure** | Access Management, Space Management |
 | **5 — Organisation & communications** | Customer Level Workspace, Newsletter, Customer Activity |
 | **6 — On-Demand Assessments** | Assessments (last to transition) |
 
-> 💡 Single Workspace customers generally receive features before Multiple Workspace customers. A feature is fully transitioned when it is end-to-end usable in Engage Center **and** no longer available in Services Hub (which redirects instead).
+> 💡 Single Workspace customers generally receive features before Multiple Workspace customers. A feature is fully transitioned when it is end-to-end usable in Engage Center **and** no longer available in Services Hub (which redirects instead). Once you've fully transitioned, any activity you start in Services Hub redirects to Engage Center.
 
 ---
 
 ## Feature-by-Feature Comparison
 
+**Legend:** ✅ available · ⚠️ partial / different model · ❌ not available · — no documented Services Hub equivalent
+
 ### Core Functionality
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Create support case** | ✅ | ✅ | Both portals submit to same ICM backend |
-| **View / update open cases** | ✅ | ✅ | Cases sync between portals |
-| **Case history (legacy)** | ✅ Full | ⚠️ Partial | Older cases may not appear in Engage Center |
-| **Severity update** | ✅ | ✅ | |
-| **Add watchers** | ✅ | ✅ | |
+| **Create support case** | ✅ | ✅ | Engage Center uses the **Support AI Assistant** (guided self-help → scoping questions → case) |
+| **View / update open cases** | ✅ | ✅ | **Support Requests** list with Overview, Communications, Attachments, Sharing tabs |
+| **Share a case with colleagues** | ✅ | ✅ | **Sharing** tab on the case |
 | **File attachments** | ✅ | ✅ | |
+| **Phone support numbers** | — | ✅ | **Phone support** option in the Support AI Assistant |
+| **Cases from cloud portals** | — | ✅ | Shown per tenant via **External Resources → Support Request Visibility** |
+| **Case Assignment across workspaces** | — | ✅ | Rollup workspaces only |
 
 ### Proactive Services
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Services catalogue** | ✅ | ⚠️ CSAM-coordinated | Proactive services are scheduled through your CSAM, not a self-service catalogue |
-| **Schedule a service** | ✅ | ⚠️ Via CSAM | Contact your CSAM to schedule proactive services |
+| **Services catalogue / scheduling** | ✅ | ⚠️ CSAM-coordinated | Consulting/advisory services are scheduled through your CSAM |
 | **On-Demand Assessments** | ✅ | ✅ | Last feature to transition (Phase 6) |
-| **Service reports / findings** | ✅ | ✅ Improved | Engage Center has richer report viewer |
-| **Hours consumption tracking** | ✅ | ✅ | |
+| **Agreement usage** | ✅ | ✅ | **Customer Activity** — packages, service tiles, usage counts (Phase 5) |
 | **Digital MIRP** | ⚠️ Limited | ✅ Full | Fully digital in Engage Center (Phase 2) |
 | **External Resources** | ❌ | ✅ | New in Engage Center (Phase 2) |
 | **Shared Files** | ⚠️ | ✅ | Account team document sharing (Phase 3) |
 
-### Account & Contacts
+### Account & Administration
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **View CSAM / TAM** | ✅ | ✅ | |
-| **Manage org users** | ✅ | ✅ Improved | Engage Center has better role management |
-| **Contract details** | ✅ | ✅ | |
-| **Entitlement hours view** | ✅ | ✅ | |
+| **View CSAM / account team** | ✅ | ✅ | MIRP → Your Account Team |
+| **Manage org users** | ✅ | ✅ | Users and Microsoft Entra groups; User Access Administrator role |
+| **Reactive Services (per-user/group service access)** | — | ✅ | Optional; via Settings → Features → Granular Reactive Services |
+| **Manage Agreements / Manage Workspaces** | — | ✅ | Agreement-service associations; Rollup and child workspaces |
+| **Newsletter** | — | ✅ | Subscriptions per user; distribution managed by admins (Phase 5) |
 
 ### Learning & Content
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
 | **Learning paths / On-Demand Learning** | ⚠️ Basic | ✅ Full | Includes Microsoft Learn modules, learning paths, and hands-on labs; progress tracked |
-| **Scheduled Services (instructor-led)** | ❌ | ✅ | Browse and register for instructor-led sessions directly — new in Engage Center |
+| **Scheduled Services (instructor-led)** | — | ✅ | Browse sessions in Learning; request enrolment by emailing your CSAM |
 | **My Learning** | ❌ | ✅ | Personalised progress view: Not Started / In Progress / Completed; assigned learning |
-| **Learning Management** | ❌ | ✅ | Assign learning to teams, set due dates, track completion — requires Learning Manager role |
-| **Content library** | ✅ | ✅ | |
+| **Learning Management** | ❌ | ✅ | Assign Microsoft Learn / Learning Campus courses, set due dates, track completion — requires Learning Manager role |
 
 ### Support Insights & Reporting
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Case volume trend** | ✅ | ✅ Improved | More visualisation options; 18 months of data |
-| **Initial Response (IR) Met %** | ⚠️ Basic | ✅ | Tracks SLA compliance over time |
-| **CritSit tracking** | ⚠️ Basic | ✅ | Sev A count + elapsed critical minutes |
-| **Cross-cloud case distribution** | ❌ | ✅ | Azure + M365 + other products in one view |
-| **Open cases by severity & age** | ✅ | ✅ Improved | |
-| **Export to CSV/PDF** | ✅ | ✅ | |
+| **Case dashboards & filters** | ✅ | ✅ | Filters: State, Date range, Cloud, Product, Severity, Status, Tenant |
+| **Initial Response (IR) met** | ⚠️ Basic | ✅ | Chart + Initial response performance statistic |
+| **Critical case tracking** | ⚠️ Basic | ✅ | Critical cases and Critical case time statistics |
+| **Cross-cloud case distribution** | ❌ | ✅ | Azure + M365 + other products in one view; by country/region too |
+| **Ask & Explore (AI)** | ❌ | ✅ | Natural-language questions about support activity |
+| **Custom Reports (AI)** | ❌ | ✅ | Templates (executive, SLA, CritSit, product health) or plain-language report requests |
+| **Export** | ✅ | ✅ | Customer users only |
 
 ### Technical & Integration
 
 | Feature | Services Hub | Engage Center | Notes |
 |---------|:-----------:|:-------------:|-------|
-| **Mobile responsive** | ⚠️ Partial | ✅ | Engage Center better on mobile |
-| **Accessibility (WCAG)** | ⚠️ | ✅ Improved | |
-| **API access** | ❌ | ❌ | Neither portal offers a public API yet |
-| **SSO / Entra ID** | ✅ | ✅ | |
-| **Multi-tenant support** | ✅ | ✅ | |
+| **SSO / Entra ID** | ✅ | ✅ | Direct MSA sign-in carried over from Services Hub is being retired |
+| **Conditional Access** | ✅ | ✅ | Engage Center can be targeted by CA policies |
+| **Multi-tenant support** | ✅ | ✅ | Managed in External Resources |
 
 ---
 
@@ -141,29 +133,28 @@ Microsoft transitions features to Engage Center in a defined order. A customer's
 
 | Improvement | Detail |
 |-------------|--------|
-| **Modern UI/UX** | Built on Azure; Fluent Design System, consistent with M365 Admin Center and Azure Portal |
-| **Learning integration** | Unified learning experience: On-Demand Learning, Scheduled Services (instructor-led), My Learning progress tracking, and Learning Management for teams |
-| **Support Insights** | 6 months of cross-cloud data; IR Met %, CritSit tracking, case distribution by product |
+| **Guided case creation** | Support AI Assistant carries self-help context into the case (pre-filled title and description, scoping questions) |
+| **Learning integration** | On-Demand Learning, Scheduled Services, My Learning progress tracking, and Learning Management for teams |
+| **Support Insights** | Cross-cloud case analytics plus AI-assisted Ask & Explore and Custom Reports |
 | **Digital MIRP** | Fully digital, self-service; replaces static PowerPoint decks |
-| **External Resources** | Centralised management of external tenant links and resources |
-| **User management** | Microsoft Entra group-based role management with granular permissions |
-| **Customer Activity** | Centralised view of contract details, entitlement hours, and purchased services |
-| **Report viewer** | Better in-portal viewing of proactive service findings |
+| **External Resources** | Per-tenant control of case visibility, sign-in access, and MIRP availability |
+| **User management** | Microsoft Entra group-based role management, plus optional per-user/group Reactive Services |
+| **Workspaces** | Rollup workspaces with Managed Administrators and Case Assignment for complex organisations |
+| **Customer Activity** | Centralised view of agreement packages, services, and usage |
 | **Shared Files** | Account team can upload documents directly into the portal |
 
 ---
 
-## What's Still Transitioning (as of 2025)
+## What's Still Transitioning (as of November 2026)
 
 Based on the official rollout order, features later in the phase sequence may still be in Services Hub for some customers:
 
 | Feature | Rollout Phase | Status |
 |---------|:------------:|--------|
 | **On-Demand Assessments** | Phase 6 (last) | May still be in Services Hub |
-| **Space Management** | Phase 4 | May still be in Services Hub |
+| **Access Management & Space Management** | Phase 4 | May still be in Services Hub |
 | **Newsletter & Customer Activity** | Phase 5 | May still be in Services Hub |
 | **Customer Level Workspace** | Phase 5 | May still be in Services Hub |
-| **Historical case data (pre-migration)** | N/A | Older cases may only be fully visible in Services Hub |
 
 > ⚠️ Feature availability varies by customer — some transition faster than others. When a feature has fully transitioned, Services Hub will **redirect** you to Engage Center rather than showing the feature there.
 
@@ -179,22 +170,21 @@ flowchart TD
     START{"What do you need?"}
     START -->|"Create or update a case"| EC1["✅ Use Engage Center\n(preferred)"]
     START -->|"Schedule a proactive service"| EC2["✅ Contact your CSAM\n(services are CSAM-coordinated)"]
-    START -->|"View old case from before migration"| SH1["⚠️ Check Services Hub\nif not in Engage Center"]
-    START -->|"Access a legacy Premier service type"| SH2["⚠️ Services Hub\nmay be needed"]
-    START -->|"View learning content"| EC3["✅ Use Engage Center\n(better experience)"]
-    START -->|"View analytics"| EC4["✅ Use Engage Center\n(richer reports)"]
+    START -->|"Feature not yet transitioned\nfor your workspace"| SH1["⚠️ Check Services Hub\n(it redirects once moved)"]
+    START -->|"View learning content"| EC3["✅ Use Engage Center"]
+    START -->|"View analytics"| EC4["✅ Use Engage Center\n(Support Insights)"]
 ```
 
-**Default recommendation for CSAs:** Always start in **Engage Center**. Fall back to **Services Hub** only when the specific feature or data is confirmed missing.
+**Default recommendation for CSAs:** Always start in **Engage Center**. Fall back to **Services Hub** only when the specific feature is confirmed not yet transitioned for that customer.
 
 ---
 
 ## URL & Access Reference
 
-| Portal | URL | Primary Use (2025) |
+| Portal | URL | Primary Use (November 2026) |
 |--------|-----|-------------------|
 | **Engage Center** | `engagecenter.microsoft.com` | Primary portal for most workflows |
-| **Services Hub** | `serviceshub.microsoft.com` | Legacy / fallback |
+| **Services Hub** | `serviceshub.microsoft.com` | Legacy / fallback for features not yet transitioned |
 | **Azure Portal** | `portal.azure.com` | Azure resource management; can raise Azure support cases here too |
 | **M365 Admin Center** | `admin.microsoft.com` | M365/O365 admin; can raise M365 support cases |
 | **Microsoft Support** | `support.microsoft.com` | Consumer/SMB support; also self-serve KB |
@@ -207,21 +197,23 @@ flowchart TD
 
 | Concern | Response |
 |---------|----------|
-| "Will I lose my case history?" | Cases are synced to Engage Center, but historical data before your migration date may require Services Hub as a reference. Microsoft retains all case data. |
-| "My team is used to Services Hub — why change?" | Engage Center offers better UX, richer analytics, and deeper learning integration. Services Hub is still available in parallel — no forced cutover yet. |
-| "I can't find the service I was using in Services Hub" | Some legacy service types are still being migrated. Contact your CSAM to schedule those services — they can bypass the portal if needed. |
+| "Will I lose my case history?" | Cases assigned to the workspace — and cases from tenants with Support Request Visibility turned on in External Resources — appear in Engage Center. If something is missing, check the tenant toggle and workspace assignment first. |
+| "My team is used to Services Hub — why change?" | Engage Center is replacing Services Hub; it adds guided case creation, AI-assisted Support Insights, and deeper learning integration. Services Hub stays available in parallel until your features transition. |
+| "I can't find the service I was using in Services Hub" | Check the rollout phase for that feature. For consulting/advisory services, contact your CSAM — they're CSAM-coordinated. |
 | "Our contract renews next month — should we wait?" | No — Engage Center access is based on your contract, not a separate sign-up. |
 
 ### Transition Checklist for CSAs
 
 | Task | Done? |
 |------|-------|
-| Confirm customer has Engage Center access provisioned | ☐ |
-| Verify Engage Center URL is allowlisted on customer firewall / proxy | ☐ |
+| Confirm the customer's Administrators have invited users and assigned roles (CSAMs can't add general users) | ☐ |
+| Verify Engage Center URLs are allowlisted on customer firewall / proxy | ☐ |
 | Confirm Conditional Access policies permit access to Engage Center | ☐ |
+| Review **External Resources**: Support Request Visibility, Login Access, MIRP per tenant | ☐ |
 | Walk through key sections in Engage Center with customer | ☐ |
-| Verify open cases appear correctly in Engage Center | ☐ |
+| Verify open cases appear correctly in Support Requests | ☐ |
 | Check which rollout phase the customer is on; identify features still in Services Hub | ☐ |
+| Move any MSA-only users to Microsoft Entra guest accounts ahead of the MSA sign-in retirement | ☐ |
 | Work with CSAM to remove unused Services Hub Workspaces | ☐ |
 | Update bookmarks / shared links to point to Engage Center | ☐ |
 
@@ -234,6 +226,7 @@ flowchart TD
 | Get ready for Engage Center | [Migration guide](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/migration) |
 | What to expect during rollout | [Rollout phases](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/what-to-expect) |
 | Engage Center features overview | [Features](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/features) |
+| Workspaces | [Engage Center workspaces](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/get-started/workspaces) |
 | Connectivity / allowlist guide | [Engage Center connectivity](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/support/engage-center-connectivity) |
 
 ---

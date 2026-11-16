@@ -4,7 +4,7 @@
 [![marcogrimaldi29.com](https://img.shields.io/badge/Blog-marcogrimaldi29.com-blue?logo=rss)](https://marcogrimaldi29.com)
 
 > - 🎯 **Goal:** Companion notes covering the Engage Center portal, Unified & Premier support contracts, Digital MIRP, and a Services Hub comparison
-> - 📅 **Notes Version:** 2026 (updated as the platform evolves)
+> - 📅 **Notes Version:** November 2026 (updated as the platform evolves)
 > - 🌐 **Published site:** [Microsoft Engage Center — Deep Dive](https://marcogrimaldi29.com/engage-center-notes/)
 > - ✍️ **Author:** [Marco Grimaldi](https://www.linkedin.com/in/marco-grimaldi29/)
 
@@ -12,7 +12,7 @@
 
 ## 📌 What Is This?
 
-**Engage Center** (`engagecenter.microsoft.com`) is Microsoft's next-generation customer portal for organisations with Unified Support contracts. It is replacing **Services Hub** and consolidates support cases, proactive services, learning, and account management in a single modernised interface.
+**Engage Center** (`engagecenter.microsoft.com`) is the Microsoft digital experience replacing **Services Hub** for organisations with Microsoft Unified support agreements. It brings support cases, Support Insights, Customer Activity, Digital MIRP, On-Demand Assessments, learning, and workspace administration into a single interface.
 
 These notes are a practical reference for **Cloud Solutions Architects** working with customers on the platform — covering everything from the portal UI and support case management to contract entitlements, Digital MIRP, and the Services Hub migration.
 
@@ -27,8 +27,8 @@ engage-center-notes/
 ├── 00-overview.md                    ← Platform overview, personas, terminology
 ├── 01-navigation-features.md         ← UI walkthrough, sections, tips
 ├── 02-support-requests.md            ← Cases: creation, severity, SLAs, escalation
-├── 03-unified-premier-contracts.md   ← Unified tiers vs Premier, entitlements
-├── 04-digital-mirp.md                ← Digital MIRP: scope, phases, deliverables
+├── 03-unified-premier-contracts.md   ← Unified base plan & add-ons vs Premier
+├── 04-digital-mirp.md                ← Digital MIRP: sections, roles, readiness
 ├── 05-services-hub-comparison.md     ← Services Hub vs Engage Center comparison
 └── 06-cheatsheet.md                  ← Quick reference: URLs, SLAs, tips
 ```
@@ -40,24 +40,24 @@ engage-center-notes/
 | # | File | Topics |
 |---|------|--------|
 | 🌐 | [00 — Platform Overview](./00-overview.md) | What Engage Center is, rollout timeline, key personas, terminology |
-| 🧭 | [01 — Navigation & Features](./01-navigation-features.md) | UI layout, sections, search, notifications, known limitations |
-| 🎫 | [02 — Support Requests](./02-support-requests.md) | Case creation, severity levels, SLA table, escalation paths |
-| 📄 | [03 — Unified & Premier Contracts](./03-unified-premier-contracts.md) | Core/Advanced/Performance tiers, Premier comparison, proactive entitlements |
-| 🛡️ | [04 — Digital MIRP](./04-digital-mirp.md) | IR planning service: phases, domains assessed, deliverables, CSA tips |
-| 🔄 | [05 — Services Hub vs Engage Center](./05-services-hub-comparison.md) | Feature comparison table, migration timeline, what's still in Services Hub |
-| ⚡ | [06 — Quick Reference Cheatsheet](./06-cheatsheet.md) | Key URLs, SLA tables, case checklist, escalation flow, field tips |
+| 🧭 | [01 — Navigation & Features](./01-navigation-features.md) | Left-nav sections, workspaces, Support Insights, roles, settings, newsletter |
+| 🎫 | [02 — Support Requests](./02-support-requests.md) | Support AI Assistant case creation, severity levels, response targets, escalation |
+| 📄 | [03 — Unified & Premier Contracts](./03-unified-premier-contracts.md) | Unified Enterprise base plan, optional add-ons, Premier comparison, Customer Activity |
+| 🛡️ | [04 — Digital MIRP](./04-digital-mirp.md) | Self-service portal tool: Cloud Solutions, attestation, roles, Azure Health, CSA tips |
+| 🔄 | [05 — Services Hub vs Engage Center](./05-services-hub-comparison.md) | Feature comparison, rollout phases, what's still in Services Hub |
+| ⚡ | [06 — Quick Reference Cheatsheet](./06-cheatsheet.md) | Key URLs, severity table, case checklist, On-Demand Assessments, field tips |
 
 ---
 
 ## 🔑 Key Topics Covered
 
-- **Engage Center portal** — navigation, features, search, analytics
-- **Unified Support tiers** — Core / Advanced / Performance compared side-by-side
+- **Engage Center portal** — navigation, workspaces, roles, Support Insights (incl. Ask & Explore and Custom Reports)
+- **Microsoft Unified** — base Unified Enterprise plan and optional add-ons (Mission Critical, Value Acceleration, Unified Assured)
 - **Legacy Premier Support** — what it was, how it maps to Unified, migration path
-- **Support cases** — severity levels, SLA targets, case lifecycle, escalation
+- **Support cases** — Support AI Assistant, severity levels (Sev 1/A/B/C), response targets, escalation
 - **Digital MIRP** — Major Incident Response Plan, self-service portal tool in Engage Center
 - **Services Hub → Engage Center** — what moved, what hasn't, transition guidance
-- **Proactive services** — On-Demand Assessments, advisory, MIRP, workshops
+- **Proactive services** — On-Demand Assessments, advisory sessions, workshops, Scheduled Services
 - **CSA field tips** — practical guidance for working with customers on the platform
 
 ---
@@ -68,8 +68,8 @@ engage-center-notes/
 |----------|------|
 | 🌐 Engage Center Portal | [engagecenter.microsoft.com](https://engagecenter.microsoft.com/) |
 | 🏛️ Services Hub (legacy) | [serviceshub.microsoft.com](https://serviceshub.microsoft.com) |
-| 📘 Microsoft Unified Support | [microsoft.com/unifiedsupport](https://www.microsoft.com/en-us/unifiedsupport) |
-| 🎓 Microsoft Learn | [learn.microsoft.com](https://learn.microsoft.com) |
+| 📘 Microsoft Unified | [microsoft.com/microsoft-unified](https://www.microsoft.com/en-us/microsoft-unified) |
+| 🎓 Engage Center documentation | [learn.microsoft.com/services-hub/microsoft-engage-center](https://learn.microsoft.com/en-us/services-hub/microsoft-engage-center/) |
 | 📞 Microsoft Support | [support.microsoft.com](https://support.microsoft.com) |
 
 ---
